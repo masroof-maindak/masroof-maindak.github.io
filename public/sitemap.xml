@@ -7,9 +7,15 @@
   </url><url>
     <loc>http://example.org/</loc>
   </url><url>
+    <loc>http://example.org/posts/archonmac/</loc>
+  </url><url>
     <loc>http://example.org/categories/</loc>
   </url><url>
     <loc>http://example.org/tags/index/</loc>
+  </url><url>
+    <loc>http://example.org/tags/linux/</loc>
+  </url><url>
+    <loc>http://example.org/tags/mac/</loc>
   </url><url>
     <loc>http://example.org/posts/</loc>
   </url><url>

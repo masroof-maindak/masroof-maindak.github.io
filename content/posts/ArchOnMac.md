@@ -1,10 +1,16 @@
----
-title: "'Reviving' an old Macbook Pro with Arch Linux"
-date: 2023-08-25T02:09:13+05:00
-draft: true
----
++++
+title = "'Reviving' an old Macbook with Arch Linux"
+date = "2023"
+description = "Notes on setting up Linux on a Macbook."
+tags = [
+    "Linux", "Mac",
+]
++++
+This entire debacle began when I recieved an almost decade old Macbook pro. Apart from a degenerating battery, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
 
-<br>This entire debacle began when I recieved an almost decade old Macbook pro. Apart from a degenerating battery, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install.
+The straw that broke the camel's back was when Apple's email, almost with a tinge of schadenfreude, announced I had to wait 15 days to... reset my password? Befuddled and peeved, I decided to slap Linux on this trusty old war machine and be done with Apple's tomfoolery.
+
+Over time, I like to think that I've perfected the experience of Linux on Mac, at least, as much as is technologically possible... 
 
 
 ## Keyboard
@@ -58,6 +64,5 @@ Do note that this a highly opinionated step that exists moreso for my own conven
 
 ## Other
 
-- For internet (at least on my Macbook Pro 2014), you need the `broadcom-wl` and `b43-firmware` packages. The latter is available in the AUR.
-- Note: `cpupower` (Set to the 'powersave' governor (underclocks processor to lowest frequency))  & `mbpfan-git` (fan daemon) are essential for Linux on Mac. Regarding the former -
-- Also check out [scripts](Scripts/) and move the contents to your `.local/bin` (or any other directory in your path).
+- For internet (at least on my Macbook Pro 2014), you need the `broadcom-wl` and `b43-firmware` packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required).
+- Note: `cpupower` (Set to the 'powersave' governor (underclocks processor to lowest frequency))  & `mbpfan-git` (fan daemon) are essential for Linux on Mac. Regarding the former, you may not even need to underclock. Personally, I deemed it a necessity, because without doing so, my battery barely lasts me a whole 90 minutes.

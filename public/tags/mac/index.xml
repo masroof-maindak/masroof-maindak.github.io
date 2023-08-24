@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maindak Swamp</title>
-    <link>http://example.org/</link>
-    <description>Recent content on Maindak Swamp</description>
+    <title>Mac on Maindak Swamp</title>
+    <link>http://example.org/tags/mac/</link>
+    <description>Recent content in Mac on Maindak Swamp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2023 Mujtaba Asim</copyright><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://example.org/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/about/</guid>
-      <description>This is my personal blog. I&amp;rsquo;m currently a CS student. I will be writing about Linux here primarily, but also other paraphernalia.</description>
-    </item>
-    
+    <copyright>© 2023 Mujtaba Asim</copyright><atom:link href="http://example.org/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Reviving&#39; an old Macbook with Arch Linux</title>
       <link>http://example.org/posts/archonmac/</link>
