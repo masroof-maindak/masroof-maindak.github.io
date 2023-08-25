@@ -14,8 +14,7 @@
       <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/post/archonmac/</guid>
-      <description>This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.
-Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.</description>
+      <description>&lt;p&gt;This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -24,7 +23,7 @@ Apart from a degenerating battery and faulty speakers, it was quite functional. 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/about/</guid>
-      <description>I&amp;rsquo;m currently a CS student. This is my personal website. I will be writing about Linux here primarily, but also other paraphernalia. I enjoy tinkering with my devices till they&amp;rsquo;re just the way I want them, listening to abhorrent music and reading obnoxious literature.</description>
+      <description>I am currently a CS major. This is my personal website. I will be writing about Linux here primarily, but also other paraphernalia. I enjoy tinkering with my devices till they&amp;rsquo;re just the way I want them, listening to abhorrent music and reading obnoxious literature.</description>
     </item>
     
   </channel>

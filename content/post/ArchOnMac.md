@@ -1,5 +1,5 @@
 +++
-author = "Mujtaba"
+author = "Mujtaba Asim"
 title = "'Reviving' an old Macbook with Arch Linux"
 date = "2023-08-25"
 description = "Notes on setting up Linux on a Macbook."
@@ -10,6 +10,8 @@ tags = [
 +++
 
 This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.
+
+<!--more-->
 
 Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
 
