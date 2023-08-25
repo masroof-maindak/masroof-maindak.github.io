@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>&#39;Reviving&#39; an old Macbook with Arch Linux &ndash; Tadpole Swamp</title>
+<meta name="description" content="A deluged personal website to archive my ramblings.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="http://example.org/css/palettes/gruvbox-dark.css">
+<link rel="stylesheet" href="http://example.org/css/risotto.css">
+<link rel="stylesheet" href="http://example.org/css/custom.css">
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="http://example.org/" class="page__logo-inner">Tadpole Swamp</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://example.org/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://example.org/post/" title="Posts">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>&lsquo;Reviving&rsquo; an old Macbook with Arch Linux</h1>
+    </header>
+    
+    <div class="content__body">
+        <p>This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.</p>
+<p>Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.</p>
+<p>The straw that broke the camel&rsquo;s back was when Apple&rsquo;s email, almost with a tinge of schadenfreude, announced I had to wait 15 days to&hellip; reset my password? Befuddled and peeved, I decided to slap Linux on this trusty old war machine and be done with Apple&rsquo;s tomfoolery.</p>
+<p>Over time, I like to think that I&rsquo;ve perfected the experience of Linux on Mac, at least, as much as is technologically possible&hellip;</p>
+<p>From my inital appreciation of its elegance to my blossoming hatred for Apple to my eventual acceptance of it as a friend, my Macbook&rsquo;s toughed through fanta spills, bootleg keyboard replacements, bricked Arch install and whatever else I&rsquo;ve thrown at it.</p>
+<p>The feet have eroded away, the battery life is garbage, the keys have been physically swapped, drawn and taped over but it&rsquo;s withered the storms and become an indispensable companion.</p>
+<p><img src="https://raw.githubusercontent.com/masroof-maindak/masroof-maindak.github.io/master/content/post/assets/keyboard.png" alt="keyboard"></p>
+<h2 id="keyboard">Keyboard</h2>
+<p>Add the following lines</p>
+<pre tabindex="0"><code>options hid-apple swap_fn_leftctrl=1
+options hid_apple swap_opt_cmd=1
+</code></pre><p>in <code>/etc/modprobe.d/hid_apple.conf</code>, regenerate your initramfs* w/ <code>mkinitcpio -p Linux</code>, then reboot your Mac for a traditional keyboard experience.</p>
+<p>*<em>If, for whatever reason, you&rsquo;re unable to run mkinitcpio, just redownload the Linux kernel - <code>sudo pacman -S linux</code>.</em></p>
+<h2 id="scaling">Scaling</h2>
+<p>Add <code>Xft.dpi: 192</code> in <code>~/.Xresources</code> (make sure to merge with xrdb in your <code>.xinitrc</code>), and</p>
+<pre tabindex="0"><code>export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
+</code></pre><p>in <code>~/.bash_profile</code> for GTK + QT apps.</p>
+<h2 id="touchpad">Touchpad</h2>
+<p>Add the following to <code>/etc/X11/xorg.conf.d/30-touchpad.conf</code>:</p>
+<pre tabindex="0"><code>Section &#34;InputClass&#34;
+    Identifier &#34;touchpad&#34;
+    Driver &#34;libinput&#34;
+    MatchIsTouchpad &#34;on&#34;
+    Option &#34;Tapping&#34; &#34;on&#34;
+    Option &#34;NaturalScrolling&#34; &#34;true&#34;
+    Option &#34;ClickMethod&#34; &#34;clickfinger&#34;
+    Option &#34;AccelProfile&#34; &#34;flat&#34;
+    Option &#34;DisableWhileTyping&#34; &#34;0&#34;
+    Option &#34;TransformationMatrix&#34; &#34;1 0 0 0 1 0 0 0 0.3&#34;
+EndSection
+</code></pre><p>For natural scrolling, tap-to-click and two-finger-right-click.</p>
+<h2 id="install">Install</h2>
+<p>Do note that this a highly opinionated step that exists moreso for my own convenience and logging purposes than an actual guide.</p>
+<ol>
+<li><code>sudo pacman -S reflector broadcom-wl wmctrl playerctl pulseaudio pulseaudio-alsa qbittorrent polybar alsa-utils brightnessctl networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi wezterm lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip jq</code></li>
+<li><code>paru -S b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player</code>.</li>
+<li>Enable services for <code>NetworkManager</code> + <code>mbpfan</code>.</li>
+<li>Compile <code>eww</code> and <code>berry</code> from source.</li>
+<li>Copy rice files from dots repo.</li>
+</ol>
+<h2 id="other">Other</h2>
+<ul>
+<li>For internet (at least on my Macbook Pro 2014), you need the <code>broadcom-wl</code> and <code>b43-firmware</code> packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required).</li>
+<li>Note: <code>cpupower</code> (Set to the &lsquo;powersave&rsquo; governor (underclocks processor to lowest frequency))  &amp; <code>mbpfan-git</code> (fan daemon) are essential for Linux on Mac. Regarding the former, you may not even need to underclock. Personally, I deemed it a necessity, because without doing so, my battery barely lasts me a whole 90 minutes.</li>
+</ul>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    
+<h1 class="about__title">𓆝 𓆟 𓆞 // Mujtaba Asim</h1>
+<p class="about__description">A deluged personal website to archive my ramblings.</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/masroof-maindak" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:mujtaba.asim.amin@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://discord.com/users/589511603289063434" rel="me" aria-label="Discord" title="Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    <p>Notes on setting up Linux on a Macbook.</p>
+    
+        <p>
+            By Mujtaba, 
+            2023-08-25
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+    
+    
+</p>
+<br /><br />
+<p class="copyright">© 2023 Mujtaba Asim</p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

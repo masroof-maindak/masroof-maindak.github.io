@@ -2,7 +2,10 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Tadpole Swamp'
 theme = 'risotto'
+paginate = 3
 copyright = "© 2023 Mujtaba Asim"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
 
 sectionPagesMenu = "main"
 
@@ -10,12 +13,12 @@ sectionPagesMenu = "main"
 noindex = false
 
 [params.theme]
-palette = "base16-dark"
+palette = "gruvbox-dark"
 
 # Sidebar: about/bio
 [params.about]
 title = "𓆝 𓆟 𓆞 // Mujtaba Asim"
-description = "A filthy personal website to archive my ramblings."
+description = "A deluged personal website to archive my ramblings."
 
 # Sidebar: social links
 # Available icon sets:
@@ -62,6 +65,7 @@ unsafe = true
     startLevel = 2
     endLevel   = 3
     ordered    = true
+
 
 [privacy]
 

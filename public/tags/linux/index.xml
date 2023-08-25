@@ -10,10 +10,10 @@
     <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Reviving&#39; an old Macbook with Arch Linux</title>
-      <link>http://example.org/posts/archonmac/</link>
+      <link>http://example.org/post/archonmac/</link>
       <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/archonmac/</guid>
+      <guid>http://example.org/post/archonmac/</guid>
       <description>This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.
 Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.</description>
     </item>
