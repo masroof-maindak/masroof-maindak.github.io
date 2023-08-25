@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tadpole Swamp</title>
+    <title>The Tadpole&#39;s Swamp</title>
     <link>http://example.org/</link>
-    <description>Recent content on Tadpole Swamp</description>
+    <description>Recent content on The Tadpole&#39;s Swamp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2023 Mujtaba Asim</copyright>
+    <copyright>© 2023 masroof-maindak</copyright>
     <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Reviving&#39; an old Macbook with Arch Linux</title>
@@ -15,15 +15,6 @@
       
       <guid>http://example.org/post/archonmac/</guid>
       <description>&lt;p&gt;This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://example.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/about/</guid>
-      <description>I am currently a CS major. This is my personal website. I will be writing about Linux here primarily, but also other paraphernalia. I enjoy tinkering with my devices till they&amp;rsquo;re just the way I want them, listening to abhorrent music and reading obnoxious literature.</description>
     </item>
     
   </channel>

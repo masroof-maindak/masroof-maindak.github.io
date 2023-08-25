@@ -1,9 +1,9 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Tadpole Swamp'
+title = "The Tadpole's Swamp"
 theme = 'risotto'
 paginate = 3
-copyright = "© 2023 Mujtaba Asim"
+copyright = "© 2023 masroof-maindak"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 
@@ -17,7 +17,7 @@ palette = "gruvbox-dark"
 
 # Sidebar: about/bio
 [params.about]
-title = "𓆝 𓆟 𓆞 // Maindak"
+title = "𓆏 // maindak"
 description = "A deluged personal website to archive my ramblings."
 
 # Sidebar: social links
