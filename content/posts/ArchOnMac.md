@@ -6,12 +6,17 @@ tags = [
     "Linux", "Mac",
 ]
 +++
-This entire debacle began when I recieved an almost decade old Macbook pro. Apart from a degenerating battery, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
+This entire debacle began when I recieved an almost decade old Macbook pro. Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
 
 The straw that broke the camel's back was when Apple's email, almost with a tinge of schadenfreude, announced I had to wait 15 days to... reset my password? Befuddled and peeved, I decided to slap Linux on this trusty old war machine and be done with Apple's tomfoolery.
 
 Over time, I like to think that I've perfected the experience of Linux on Mac, at least, as much as is technologically possible... 
 
+From my inital appreciation of its elegance to my blossoming hatred for Apple to my eventual acceptance of it as a friend, my Macbook's toughed through fanta spills, bootleg keyboard replacements, bricked Arch install and whatever else I've thrown at it.
+
+The feet have eroded away, the battery life is garbage, the keys have been physically swapped, drawn and taped over but it's withered the storms and become an indispensable companion.
+
+![keyboard](keyboard.png)
 
 ## Keyboard
 Add the following lines
