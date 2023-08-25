@@ -1,12 +1,17 @@
 +++
+author = "Mujtaba"
 title = "'Reviving' an old Macbook with Arch Linux"
-date = "2023"
+date = "2023-08-25"
 description = "Notes on setting up Linux on a Macbook."
 tags = [
-    "Linux", "Mac",
+    "Linux", 
+    "Mac"
 ]
 +++
-This entire debacle began when I recieved an almost decade old Macbook pro. Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
+
+This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.
+
+Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
 
 The straw that broke the camel's back was when Apple's email, almost with a tinge of schadenfreude, announced I had to wait 15 days to... reset my password? Befuddled and peeved, I decided to slap Linux on this trusty old war machine and be done with Apple's tomfoolery.
 
@@ -16,7 +21,7 @@ From my inital appreciation of its elegance to my blossoming hatred for Apple to
 
 The feet have eroded away, the battery life is garbage, the keys have been physically swapped, drawn and taped over but it's withered the storms and become an indispensable companion.
 
-![keyboard](keyboard.png)
+![keyboard](https://raw.githubusercontent.com/masroof-maindak/masroof-maindak.github.io/master/content/posts/assets/keyboard.png)
 
 ## Keyboard
 Add the following lines

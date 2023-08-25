@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maindak Swamp</title>
+    <title>Tadpole Swamp</title>
     <link>http://example.org/</link>
-    <description>Recent content on Maindak Swamp</description>
+    <description>Recent content on Tadpole Swamp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2023 Mujtaba Asim</copyright><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2023 Mujtaba Asim</copyright>
+    <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;Reviving&#39; an old Macbook with Arch Linux</title>
+      <link>http://example.org/posts/archonmac/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/archonmac/</guid>
+      <description>This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.
+Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>http://example.org/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/about/</guid>
-      <description>This is my personal blog. I&amp;rsquo;m currently a CS student. I will be writing about Linux here primarily, but also other paraphernalia.</description>
-    </item>
-    
-    <item>
-      <title>&#39;Reviving&#39; an old Macbook with Arch Linux</title>
-      <link>http://example.org/posts/archonmac/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/posts/archonmac/</guid>
-      <description>This entire debacle began when I recieved an almost decade old Macbook pro. Apart from a degenerating battery, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.
-The straw that broke the camel&amp;rsquo;s back was when Apple&amp;rsquo;s email, almost with a tinge of schadenfreude, announced I had to wait 15 days to&amp;hellip; reset my password?</description>
+      <description>I&amp;rsquo;m currently a CS student. This is my personal website. I will be writing about Linux here primarily, but also other paraphernalia. I enjoy tinkering with my devices till they&amp;rsquo;re just the way I want them.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⠾⠿⠿⠯⣷⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣾⠛⠁⠀⠀⠀⠀⠀⠀⠈⢻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠿⠁⠀⠀⠀⢀⣤⣾⣟⣛⣛⣶⣬⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠃⠀⠀⠀⠀⠀⣾⣿⠟⠉⠉⠉⠉⠛⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠋⠀⠀⠀⠀⠀⠀⠀⣿⡏⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⣠⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⣠⣼⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣤⣤⣠⣤⣤⡤⡶⣶⢿⠟⠹⠿⠄⣿⣿⠏⠀⣀⣤⡦⠀⠀⠀⠀⣀⡄ ⢀⣄⣠⣶⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠚⠋⠉⠀⠀⠀⠀⠀⠀⠈⠛⡛⡻⠿⠿⠙⠓⢒⣺⡿⠋⠁ ⠉⠉⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀ </description>
     </item>
     
   </channel>
