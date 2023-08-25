@@ -21,7 +21,7 @@ From my inital appreciation of its elegance to my blossoming hatred for Apple to
 
 The feet have eroded away, the battery life is garbage, the keys have been physically swapped, drawn and taped over but it's withered the storms and become an indispensable companion.
 
-![keyboard](https://raw.githubusercontent.com/masroof-maindak/masroof-maindak.github.io/master/content/post/assets/keyboard.png)
+![keyboard](https://raw.githubusercontent.com/masroof-maindak/masroof-maindak.github.io/master/content/assets/keyboard.png)
 
 ## Keyboard
 Add the following lines
