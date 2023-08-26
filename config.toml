@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://maindak.is-a.dev/'
 languageCode = 'en-us'
 title = "The Tadpole's Swamp"
 theme = 'risotto'
@@ -18,7 +18,7 @@ palette = "gruvbox-dark"
 # Sidebar: about/bio
 [params.about]
 title = "𓆏 // maindak"
-description = "A deluged personal website to archive my ramblings."
+description = "A murky personal website to archive my ramblings."
 
 # Sidebar: social links
 # Available icon sets:

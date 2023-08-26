@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Tadpole&#39;s Swamp</title>
-    <link>http://example.org/</link>
+    <link>https://maindak.is-a.dev/</link>
     <description>Recent content on The Tadpole&#39;s Swamp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2023 masroof-maindak</copyright>
-    <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maindak.is-a.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&#39;Reviving&#39; an old Macbook with Arch Linux</title>
-      <link>http://example.org/post/archonmac/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      <link>https://maindak.is-a.dev/post/archonmac/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/archonmac/</guid>
+      <guid>https://maindak.is-a.dev/post/archonmac/</guid>
       <description>&lt;p&gt;This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.&lt;/p&gt;</description>
     </item>
     

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on The Tadpole&#39;s Swamp</title>
-    <link>http://example.org/about/</link>
+    <link>https://maindak.is-a.dev/about/</link>
     <description>Recent content in About on The Tadpole&#39;s Swamp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2023 masroof-maindak</copyright><atom:link href="http://example.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2023 masroof-maindak</copyright><atom:link href="https://maindak.is-a.dev/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

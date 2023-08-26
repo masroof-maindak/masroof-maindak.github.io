@@ -1,8 +1,8 @@
 +++
 author = "Mujtaba Asim"
 title = "'Reviving' an old Macbook with Arch Linux"
-date = "2023-08-25"
-description = "Notes on setting up Linux on a Macbook."
+date = "2023-08-26"
+description = "Notes on setting up Linux on a Macbook (without a desktop environment)."
 tags = [
     "Linux", 
     "Mac"
@@ -38,7 +38,7 @@ in `/etc/modprobe.d/hid_apple.conf`, regenerate your initramfs* w/ `mkinitcpio -
 
 ## Scaling
 
-Add `Xft.dpi: 192` in `~/.Xresources` (make sure to merge with xrdb in your `.xinitrc`), and
+Add `Xft.dpi: 192` in `~/.Xresources` (to ensure that it's run on startup, add `xrdb -merge ~/.Xresources` in your `~/.xinitrc`), and
 
 ```
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
@@ -68,13 +68,21 @@ For natural scrolling, tap-to-click and two-finger-right-click.
 ## Install
 Do note that this a highly opinionated step that exists moreso for my own convenience and logging purposes than an actual guide.
 
-1. ```sudo pacman -S reflector broadcom-wl wmctrl playerctl pulseaudio pulseaudio-alsa qbittorrent polybar alsa-utils brightnessctl networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi wezterm lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip jq```
-2. ```paru -S b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player```.
+1. `sudo pacman -S`
+```
+reflector broadcom-wl wmctrl playerctl pulseaudio pulseaudio-alsa qbittorrent polybar alsa-utils brightnessctl networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi wezterm lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip jq
+```
+2. `paru -S`
+```
+b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player
+```
 3. Enable services for `NetworkManager` + `mbpfan`.
 4. Compile `eww` and `berry` from source.
-5. Copy rice files from dots repo.
+5. Copy rice files from [dots](https://github.com/masroof-maindak/dots/) repo.
+
+_The up-to-date version of the packages in the aforementioned steps will be in `MacbookPro2014/$HOME/packageList.md` in my dots repo._
 
 ## Other
 
-- For internet (at least on my Macbook Pro 2014), you need the `broadcom-wl` and `b43-firmware` packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required).
+- For internet (at least on my Macbook Pro 2014), you need the `broadcom-wl` and `b43-firmware` packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required) or an ethernet adapter.
 - Note: `cpupower` (Set to the 'powersave' governor (underclocks processor to lowest frequency))  & `mbpfan-git` (fan daemon) are essential for Linux on Mac. Regarding the former, you may not even need to underclock. Personally, I deemed it a necessity, because without doing so, my battery barely lasts me a whole 90 minutes.

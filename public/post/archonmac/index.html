@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head><title>&#39;Reviving&#39; an old Macbook with Arch Linux &ndash; The Tadpole&#39;s Swamp</title>
-<meta name="description" content="A deluged personal website to archive my ramblings.">
+<meta name="description" content="A murky personal website to archive my ramblings.">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8"/>
@@ -15,9 +15,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
 
 
-<link rel="stylesheet" href="http://example.org/css/palettes/gruvbox-dark.css">
-<link rel="stylesheet" href="http://example.org/css/risotto.css">
-<link rel="stylesheet" href="http://example.org/css/custom.css">
+<link rel="stylesheet" href="https://maindak.is-a.dev/css/palettes/gruvbox-dark.css">
+<link rel="stylesheet" href="https://maindak.is-a.dev/css/risotto.css">
+<link rel="stylesheet" href="https://maindak.is-a.dev/css/custom.css">
 </head>
 
     <body>
@@ -25,12 +25,12 @@
 
             <header class="page__header"><nav class="page__nav main-nav">
     <ul>
-    <h1 class="page__logo"><a href="http://example.org/" class="page__logo-inner">The Tadpole&#39;s Swamp</a></h1>
+    <h1 class="page__logo"><a href="https://maindak.is-a.dev/" class="page__logo-inner">The Tadpole&#39;s Swamp</a></h1>
     
     
-    <li class="main-nav__item"><a class="nav-main-item" href="http://example.org/about/" title="">About</a></li>
+    <li class="main-nav__item"><a class="nav-main-item" href="https://maindak.is-a.dev/about/" title="">About</a></li>
     
-    <li class="main-nav__item"><a class="nav-main-item active" href="http://example.org/post/" title="Posts">Posts</a></li>
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://maindak.is-a.dev/post/" title="Posts">Posts</a></li>
     
     </ul>
 </nav>
@@ -57,7 +57,7 @@ options hid_apple swap_opt_cmd=1
 </code></pre><p>in <code>/etc/modprobe.d/hid_apple.conf</code>, regenerate your initramfs* w/ <code>mkinitcpio -p Linux</code>, then reboot your Mac for a traditional keyboard experience.</p>
 <p>*<em>If, for whatever reason, you&rsquo;re unable to run mkinitcpio, just redownload the Linux kernel - <code>sudo pacman -S linux</code>.</em></p>
 <h2 id="scaling">Scaling</h2>
-<p>Add <code>Xft.dpi: 192</code> in <code>~/.Xresources</code> (make sure to merge with xrdb in your <code>.xinitrc</code>), and</p>
+<p>Add <code>Xft.dpi: 192</code> in <code>~/.Xresources</code> (to ensure that it&rsquo;s run on startup, add <code>xrdb -merge ~/.Xresources</code> in your <code>~/.xinitrc</code>), and</p>
 <pre tabindex="0"><code>export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
@@ -79,15 +79,22 @@ EndSection
 <h2 id="install">Install</h2>
 <p>Do note that this a highly opinionated step that exists moreso for my own convenience and logging purposes than an actual guide.</p>
 <ol>
-<li><code>sudo pacman -S reflector broadcom-wl wmctrl playerctl pulseaudio pulseaudio-alsa qbittorrent polybar alsa-utils brightnessctl networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi wezterm lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip jq</code></li>
-<li><code>paru -S b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player</code>.</li>
+<li><code>sudo pacman -S</code></li>
+</ol>
+<pre tabindex="0"><code>reflector broadcom-wl wmctrl playerctl pulseaudio pulseaudio-alsa qbittorrent polybar alsa-utils brightnessctl networkmanager xorg-xinit ranger htop neovim firefox dunst thunar feh gthumb nitrogen maim shotgun firefox rofi wezterm lxappearance-gtk3 mpv imagemagick ffmpeg zathura zathura-pdf-mupdf upower unzip jq
+</code></pre><ol start="2">
+<li><code>paru -S</code></li>
+</ol>
+<pre tabindex="0"><code>b43-firmware mbpfan-git cpupower-gui visual-studio-code-bin dragon-drop lutgen-git spotify_player
+</code></pre><ol start="3">
 <li>Enable services for <code>NetworkManager</code> + <code>mbpfan</code>.</li>
 <li>Compile <code>eww</code> and <code>berry</code> from source.</li>
-<li>Copy rice files from dots repo.</li>
+<li>Copy rice files from <a href="https://github.com/masroof-maindak/dots/">dots</a> repo.</li>
 </ol>
+<p><em>The up-to-date version of the packages in the aforementioned steps will be in <code>MacbookPro2014/$HOME/packageList.md</code> in my dots repo.</em></p>
 <h2 id="other">Other</h2>
 <ul>
-<li>For internet (at least on my Macbook Pro 2014), you need the <code>broadcom-wl</code> and <code>b43-firmware</code> packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required).</li>
+<li>For internet (at least on my Macbook Pro 2014), you need the <code>broadcom-wl</code> and <code>b43-firmware</code> packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required) or an ethernet adapter.</li>
 <li>Note: <code>cpupower</code> (Set to the &lsquo;powersave&rsquo; governor (underclocks processor to lowest frequency))  &amp; <code>mbpfan-git</code> (fan daemon) are essential for Linux on Mac. Regarding the former, you may not even need to underclock. Personally, I deemed it a necessity, because without doing so, my battery barely lasts me a whole 90 minutes.</li>
 </ul>
     </div>
@@ -100,7 +107,7 @@ EndSection
 <div class="aside__about">
     
 <h1 class="about__title">𓆏 // maindak</h1>
-<p class="about__description">A deluged personal website to archive my ramblings.</p>
+<p class="about__description">A murky personal website to archive my ramblings.</p>
 </div>
 
 
@@ -122,11 +129,11 @@ EndSection
 </div>
                 <hr>
                 <div class="aside__content">
-    <p>Notes on setting up Linux on a Macbook.</p>
+    <p>Notes on setting up Linux on a Macbook (without a desktop environment).</p>
     
         <p>
             By Mujtaba Asim, 
-            2023-08-25
+            2023-08-26
         </p>
     
 

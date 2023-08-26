@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Tadpole&#39;s Swamp</title>
-    <link>http://example.org/tags/</link>
+    <link>https://maindak.is-a.dev/tags/</link>
     <description>Recent content in Tags on The Tadpole&#39;s Swamp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2023 masroof-maindak</copyright>
-    <lastBuildDate>Fri, 25 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maindak.is-a.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>http://example.org/tags/linux/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      <link>https://maindak.is-a.dev/tags/linux/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/linux/</guid>
+      <guid>https://maindak.is-a.dev/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mac</title>
-      <link>http://example.org/tags/mac/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      <link>https://maindak.is-a.dev/tags/mac/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/mac/</guid>
+      <guid>https://maindak.is-a.dev/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>http://example.org/tags/index/</link>
+      <link>https://maindak.is-a.dev/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/tags/index/</guid>
+      <guid>https://maindak.is-a.dev/tags/index/</guid>
       <description></description>
     </item>
     
