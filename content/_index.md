@@ -1,4 +1,4 @@
-![main](romanIvanina.jpg)
+![main](toddKent.jpg)
 <div style='text-align: center;'>
 
 _it's a teenage wasteland, <br>what a time to be alive.<br>_

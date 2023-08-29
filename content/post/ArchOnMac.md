@@ -13,7 +13,7 @@ This entire debacle began when I recieved an almost decade old Macbook Pro. To b
 
 <!--more-->
 
-Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. Regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
+Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting it and losing my Big Sur install. After that, regardless of what I then tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable. 
 
 The straw that broke the camel's back was when Apple's email, almost with a tinge of schadenfreude, announced I had to wait 15 days to... reset my password? Befuddled and peeved, I decided to slap Linux on this trusty old war machine and be done with Apple's tomfoolery.
 
