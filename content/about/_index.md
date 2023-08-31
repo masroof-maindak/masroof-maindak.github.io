@@ -9,5 +9,5 @@ I enjoy Evangelion, [tinkering](https://github.com/masroof-maindak/dots) with my
 
 ![misato](misato.gif)
 
-_site powered by [hugo](https://gohugo.io/) and [risotto](https://github.com/joeroe/risotto)._
+_powered by [hugo](https://gohugo.io/) and [risotto](https://github.com/joeroe/risotto)._
 </div>

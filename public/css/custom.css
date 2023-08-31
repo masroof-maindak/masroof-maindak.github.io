@@ -1,3 +1,11 @@
 .advertisement {
     display: none !important;
 }
+
+* {
+    font-size: 1em !important;
+}
+
+.copyright {
+    font-size: 1.33em !important;
+}
