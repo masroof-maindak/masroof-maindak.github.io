@@ -6,8 +6,8 @@ tags = ["index"]
 +++
 
 <br>
-<div style='text-align: center;'>
-    <img src=asuka.gif width=48%>
-    <img src=asuka2.gif width = 48%>
+<div style='display: flex; justify-content: space-evenly;'>
+    <img src=asuka.gif width=47%>    
+    <img src=asuka2.gif width=47%>
 </div>
 <br>

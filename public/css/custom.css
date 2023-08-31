@@ -2,10 +2,24 @@
     display: none !important;
 }
 
-* {
-    font-size: 1em !important;
+:root {
+    --font-monospace: 'Roboto Condensed', monospace !important;
+}
+
+body {
+    font-size: 1rem !important;
 }
 
 .copyright {
-    font-size: 1.33em !important;
+    font-size: 1.6rem !important;
 }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+h6 {
+    font-size: 1.1rem;
+}
+
