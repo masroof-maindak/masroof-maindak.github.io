@@ -7,7 +7,7 @@ I enjoy Evangelion, [tinkering](https://github.com/masroof-maindak/dots) with my
 
 <div style='text-align: center;'>
 
-![asuka](asuka.gif)
+![misato](misato.gif)
 
 _site powered by [hugo](https://gohugo.io/) and [risotto](https://github.com/joeroe/risotto)._
 </div>
