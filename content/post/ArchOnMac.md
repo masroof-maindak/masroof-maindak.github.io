@@ -1,7 +1,7 @@
 +++
 author = "Mujtaba Asim"
 title = "'Reviving' an old Macbook with Arch Linux"
-date = "2023-09-1"
+date = "2023-09-01"
 description = "Notes on setting up Linux on a Macbook (without a desktop environment)."
 tags = [
     "Linux", 
