@@ -3,8 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maindak.is-a.dev/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maindak.is-a.dev/post/archonmac/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maindak.is-a.dev/tags/linux/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maindak.is-a.dev/tags/mac/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maindak.is-a.dev/post/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maindak.is-a.dev/tags/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://maindak.is-a.dev/about/</loc>
   </url><url>
@@ -12,14 +26,6 @@
   </url><url>
     <loc>https://maindak.is-a.dev/tags/index/</loc>
   </url><url>
-    <loc>https://maindak.is-a.dev/tags/linux/</loc>
-  </url><url>
-    <loc>https://maindak.is-a.dev/tags/mac/</loc>
-  </url><url>
-    <loc>https://maindak.is-a.dev/post/</loc>
-  </url><url>
     <loc>https://maindak.is-a.dev/series/</loc>
-  </url><url>
-    <loc>https://maindak.is-a.dev/tags/</loc>
   </url>
 </urlset>
