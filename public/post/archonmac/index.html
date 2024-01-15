@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
 
 
-<link rel="stylesheet" href="https://maindak.is-a.dev/css/palettes/gruvbox-dark.css">
+<link rel="stylesheet" href="https://maindak.is-a.dev/css/palettes/swamp.css">
 <link rel="stylesheet" href="https://maindak.is-a.dev/css/risotto.css">
 <link rel="stylesheet" href="https://maindak.is-a.dev/css/custom.css">
 
@@ -51,12 +51,11 @@
     
     <div class="content__body">
         <p>This entire debacle began when I recieved an almost decade old Macbook Pro. To be precise, one from Mid 2014 with a 4th gen i5 processor, 8 GB DDR3 RAM, and a 128 GB SSD.</p>
-<p>Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory restarting and losing my Big Sur install. After that, regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.</p>
+<p>Apart from a degenerating battery and faulty speakers, it was quite functional. The only problem? Factory resetting and losing my Big Sur install. After that, regardless of what I tried, it refused to update. The archaic UI and lack of software support was jarring, but bearable.</p>
 <p>The straw that broke the camel&rsquo;s back was when Apple&rsquo;s email, almost with a tinge of schadenfreude, announced I had to wait 15 days to&hellip; reset my password? Befuddled and peeved, I decided to slap Linux on this trusty old war machine and be done with Apple&rsquo;s tomfoolery.</p>
-<p>Over time, I like to think that I&rsquo;ve perfected the experience of Linux on Mac, at least, as much as is technologically possible&hellip;</p>
+<p>Over time, I like to think that I&rsquo;ve perfected the experience of Linux on Mac, at least, as much as I possibly can.</p>
 <p>From my inital appreciation of its elegance to my blossoming hatred for Apple to eventual acceptance, my Macbook&rsquo;s toughed through Fanta spills, bootleg keyboard replacements, bricked Arch install and everything else I&rsquo;ve thrown at it.</p>
 <p>The feet have eroded away, the battery life is garbage, the keys have been physically swapped, drawn and taped over but it&rsquo;s withered the storms and emerged as an indispensable companion.</p>
-<p><img src="https://raw.githubusercontent.com/masroof-maindak/masroof-maindak.github.io/master/content/assets/keyboard.png" alt="keyboard"></p>
 <h2 id="keyboard">Keyboard</h2>
 <p>Add the following lines</p>
 <pre tabindex="0"><code>options hid-apple swap_fn_leftctrl=1
@@ -79,7 +78,7 @@ export GDK_DPI_SCALE=0.5
     Option &#34;NaturalScrolling&#34; &#34;true&#34;
     Option &#34;ClickMethod&#34; &#34;clickfinger&#34;
     Option &#34;AccelProfile&#34; &#34;flat&#34;
-    Option &#34;DisableWhileTyping&#34; &#34;0&#34;
+    Option &#34;DisableWhileTyping&#34; &#34;1&#34;
     Option &#34;TransformationMatrix&#34; &#34;1 0 0 0 1 0 0 0 0.3&#34;
 EndSection
 </code></pre><p>For natural scrolling, tap-to-click and two-finger-right-click.</p>
@@ -102,9 +101,9 @@ EndSection
 <h2 id="other">Other</h2>
 <ul>
 <li>For internet (at least on my Macbook Pro 2014), you need the <code>broadcom-wl</code> and <code>b43-firmware</code> packages. The latter is available in the AUR. You can download them via USB tethering (Android phone required) or an ethernet adapter.</li>
-<li>Note: <code>cpupower</code>* (Set to the &lsquo;powersave&rsquo; governor (underclocks processor to lowest frequency))  &amp; <code>mbpfan-git</code> (fan daemon) are essential for Linux on Mac.</li>
+<li>Note: <code>cpupower-gui</code>* &amp; <code>mbpfan-git</code> (fan daemon) are essential for Linux on Mac.</li>
 </ul>
-<p>*<em>Might not be required. Essential in my case because otherwise, my battery barely lasts me a whole 90 minutes and the laptop gets unbearably hot.</em></p>
+<p>*<em>Might not be required. I like to underclock when I&rsquo;m not doing something intensive to keep the battery cool and the fans quiet.</em></p>
     </div>
     <footer class="content__footer"></footer>
 
@@ -137,7 +136,7 @@ EndSection
 </div>
                 <hr>
                 <div class="aside__content">
-    <p>Notes on setting up Linux on a Macbook (without a desktop environment).</p>
+    <p>Notes on setting up Arch Linux on an old Intel Macbook.</p>
     
         <p>
             By Mujtaba Asim, 

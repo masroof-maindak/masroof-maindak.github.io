@@ -4,8 +4,8 @@ description = "© masroof-maindak 2023"
 
 <div style='text-align: center;'>
 
-![main](beach.gif)
+![Misbehaving](misbehaving.jpg)
 
-_it's a teenage wasteland, <br>what a time to be alive.<br>_
+_Misbehaving ~ Henriëtte Ronner-Knip.<br>_
 
 </div>

@@ -2,8 +2,30 @@
     display: none !important;
 }
 
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(/fonts/RobotoCondensed-Regular.ttf) format('truetype');
+}
+
 :root {
     --font-monospace: 'Roboto Condensed', monospace !important;
+
+    /* Background */
+    --bg: var(--base00);
+    --off-bg: var(--base01);
+    --inner-bg: var(--base02);
+
+    /* Text */
+    --fg: var(--base05);
+    --off-fg: var(--base04);
+    --muted: var(--base03);
+
+    --link: var(--base0E);
+    --hover: var(--base08);
+    --highlight: var(--base0B);
+
+    /* Logo */
+    --logo: var(--base0A);
 }
 
 body {
