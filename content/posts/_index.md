@@ -1,6 +1,6 @@
 +++
 title = "Posts"
-description = "Stuff I've written."
+description = "Ramblings."
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"

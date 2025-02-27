@@ -1,4 +1,4 @@
-# serene v3.4.0
+# serene v4.5.0
 #
 # - docs: https://github.com/isunjn/serene/blob/latest/USAGE.md
 # - check for updates: https://github.com/isunjn/serene/releases
@@ -6,7 +6,6 @@
 #=========================================================================================
 
 base_url = "https://maindak.is-a.dev/"
-
 title = "The Tadpole's Swamp"
 description = "Murky personal website."
 default_language = "en"
@@ -46,15 +45,13 @@ name = "Mujtaba Asim"                 # Your name
 id = "masroof-maindak"                # Your id / username / handle
 bio = "Goddamned Vagrant."            # Your bio
 avatar = "img/avatar.webp"            # Your avatar
-links = [                             # Your links
-    { name = "GitHub", icon = "github", url = "https://github.com/masroof-maindak" },
-    { name = "Email", icon = "email", url = "mailto:mujtaba.asim.amin@gmail.com" },
-]
 
-homepage_layout = "about"             # "about" | "list" | "recent"
+display_id = true
+display_bio = true
+display_avatar = true
 
+recent = false
 recent_max = 15
-recent_more = true
 recent_more_text = "more »"
 
 sections = [
@@ -64,31 +61,38 @@ sections = [
 ]
 blog_section_path = "/posts"
 
-nav_separator = "/"
-nav_wrapper_left = "{"
-nav_wrapper_right = "} ;"
-nav_wrapper_separator = ","
+links = [                             # Your links
+    { name = "GitHub", icon = "github", url = "https://github.com/masroof-maindak" },
+    { name = "Email", icon = "email", url = "mailto:mujtaba.asim.amin@gmail.com" },
+]
 
-display_id = true                     # Whether to display your id on homepage
+force_theme = false
 blog_categorized = false              # Whether to categorize blog posts
 blur_effect = false                    # Whether to turn on blur effect on navigation bar
 back_to_top = true                    # Whether to show back-to-top button on post pages
-
 toc = true                            # Whether to show Table-Of-Contents by default
 copy = true                           # Whether to add a copy button on code blocks by default
-comment = false                       # Whether to show giscus comment section by default, see https://giscus.app for more info
 display_tags = true                   # Whether to display tags on post pages by default
 truncate_summary = false              # Whether to truncate the summary of a post by default
+comment = false                       # Whether to show giscus comment section by default, see https://giscus.app for more info
+
+reaction = false                      # Whether to show anonymous reactions (Note: You need to set up a working api endpoint to enable anonymous reaction)
+reaction_align = "right"              # "left" | "center" | "right"
+reaction_endpoint = "https://example.com/api/reaction"
 
 outdate_alert = false                 # Whether to show outdate alert by default
 outdate_alert_days = 120
 outdate_alert_text_before = "Last updated "
 outdate_alert_text_after = " days ago"
 
-footer_copyright = "© 2024 Mujtaba Asim"
+nav_separator = "/"
+nav_wrapper_left = "{"
+nav_wrapper_right = "} ;"
+nav_wrapper_separator = ","
+
+footer_copyright = "© 2025 Mujtaba Asim"
 footer_credits = true
 
 not_found_title = "404"
 not_found_error_text = "Not Found"
 not_found_recover_text = "« back to home »"
-

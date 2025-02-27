@@ -1,0 +1,35 @@
+[[project]]
+name = "nuktah"
+desc = "Compiler for the Nuktah programming language."
+tags = ["Compiler", "Rust"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/nuktah" },
+]
+
+[[project]]
+name = "ghonsla"
+desc = "Rudimentary, virtual, FAT-like filesystem."
+tags = ["Filesystem", "Linux", "C"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/ghonsla" },
+]
+
+[[project]]
+name = "jalebi"
+desc = "Lightweight multi-threaded cloud storage service."
+tags = ["Networking", "Linux", "C"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/jalebi" },
+]
+
+[[project]]
+name = "darakht"
+desc = "Merkle Tree library."
+tags = ["Cryptography", "Go"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/darakht" },
+]
