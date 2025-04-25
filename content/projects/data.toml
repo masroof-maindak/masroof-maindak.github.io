@@ -1,7 +1,34 @@
 [[project]]
+name = "musannif"
+desc = "Collaborative Markdown editor."
+tags = ["Go", "Distributed Systems"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/musannif-md/musannif" },
+]
+
+[[project]]
+name = "musawwir"
+desc = "Lightweight Linux image drawing tool."
+tags = ["Linux", "C"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/musawwir" },
+]
+
+[[project]]
+name = "lughat"
+desc = "CLI client for Google Gemini."
+tags = ["Rust", "LLMs"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/lughat" },
+]
+
+[[project]]
 name = "nuktah"
 desc = "Compiler for the Nuktah programming language."
-tags = ["Compiler", "Rust"]
+tags = ["Compilers", "Rust"]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/masroof-maindak/nuktah" },
@@ -10,7 +37,7 @@ links = [
 [[project]]
 name = "ghonsla"
 desc = "Rudimentary, virtual, FAT-like filesystem."
-tags = ["Filesystem", "Linux", "C"]
+tags = ["Filesystems", "Linux", "C"]
 img = ""
 links = [
   { name = "GitHub", url = "https://github.com/masroof-maindak/ghonsla" },

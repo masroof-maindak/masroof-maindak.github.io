@@ -5,11 +5,11 @@ draft = false
 
 [taxonomies]
 categories = ["Media"]
-tags = ["Dark Souls III", "From Software"]
+tags = ["Dark Souls III", "From Software", "Souls"]
 
 [extra]
 lang = "en"
-toc = true
+toc = false
 comment = true
 outdate_alert = false
 display_tags = true
