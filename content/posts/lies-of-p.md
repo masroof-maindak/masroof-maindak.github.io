@@ -1,10 +1,9 @@
 +++
-title = "Lies of P"
+title = "Lies of P - Review"
 date = 2025-04-25
 draft = false
 
 [taxonomies]
-categories = ["Media"]
 tags = ["Lies of P", "Souls", "Game Review"]
 
 [extra]

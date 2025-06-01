@@ -1,7 +1,125 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content="light dark" name=color-scheme><title>404</title><link href=/img/favicon-32x32.png rel=icon sizes=32x32 type=image/png><link href=/img/favicon-16x16.png rel=icon sizes=16x16 type=image/png><link href=/img/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><style>@font-face{font-display:swap;font-family:IBM Plex Sans;font-style:normal;font-weight:400;src:url(../font/ibm-plex-sans-v19-latin-regular.woff2)format("woff2")}@font-face{font-display:swap;font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(../font/ibm-plex-mono-v19-latin-regular.woff2)format("woff2")}</style><style>body{--primary-color:#bf7979;--primary-pale-color:#ddcebc;--text-color:#64513e;--text-pale-color:#a0907d;--bg-color:#f1e3d1;--highlight-mark-color:#cc241d;--callout-note-color:#d09700;--callout-important-color:#d09700;--callout-warning-color:#945581;--callout-alert-color:#933;--callout-question-color:#75858c;--callout-tip-color:#908d6a}body.dark{--primary-color:#db930d;--primary-pale-color:#4d3f32;--text-color:#ebe0bb;--text-pale-color:#b8a58c;--bg-color:#242015;--highlight-mark-color:#cc241d;--callout-note-color:#c1666b;--callout-important-color:#c1666b;--callout-warning-color:#ba6d36;--callout-alert-color:#a82d56;--callout-question-color:#91506c;--callout-tip-color:#7a7653}body{--main-font:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--code-font:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--homepage-max-width:768px;--main-max-width:768px;--avatar-size:60px;--icon-size:20px;--homepage-font-size:16px;--homepage-line-height:1.75;--paragraph-font-size:16px;--paragraph-line-height:1.75;--aside-font-size:15px;--img-border-radius:0px;--callout-border-radius:0px;--detail-border-radius:0px;--dark-mode-img-brightness:.75;--dark-mode-chart-brightness:.75;--inline-code-border-radius:2px;--inline-code-bg-color:var(--primary-pale-color);--block-code-border-radius:0px;--block-code-border-color:var(--primary-color);--detail-border-color:var(--primary-color)}</style><link href=/main.css rel=stylesheet><body class=not-found><script>const theme = sessionStorage.getItem('theme');
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>404</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://maindak.is-a.dev/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://maindak.is-a.dev/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://maindak.is-a.dev/img/apple-touch-icon.png">
+  <style>
+
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/ibm-plex-sans-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibm-plex-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/ibm-plex-mono-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+</style>
+
+  <style>
+
+  /* light mode colors */
+  body {
+    --primary-color: #BF7979;
+    --primary-pale-color: #DDCEBC;
+    --primary-decoration-color: #DDCEBC;
+    --bg-color: #F1E3D1;
+    --text-color: #64513E;
+    --text-pale-color: #A0907D;
+    --text-decoration-color: #75858c;
+	  --highlight-mark-color: #993333;
+
+    --callout-note-color: #d09700;
+    --callout-tip-color: #908d6a;
+    --callout-important-color: #d09700;
+    --callout-warning-color: #945581;
+    --callout-caution-color: #993333;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #db930d;
+    --primary-pale-color: #4D3F32;
+    --primary-decoration-color: #3a3124;
+    --bg-color: #242015;
+    --text-color: #ebe0bb;
+    --text-pale-color: #b8a58c;
+    --text-decoration-color: #91506c;
+    --highlight-mark-color: #cc241d;
+
+    --callout-note-color: #C1666B;
+    --callout-tip-color: #7A7653;
+    --callout-important-color: #C1666B;
+    --callout-warning-color: #BA6D36;
+    --callout-caution-color: #a82d56;
+  }
+
+  /* typography */
+  body {
+    --main-font: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+</style>
+
+  <link rel="stylesheet" href="https://maindak.is-a.dev/main.css">
+  
+  
+</head>
+
+<body class="not-found">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
     const match = window.matchMedia("(prefers-color-scheme: dark)").matches
     if ((theme && theme == 'dark') || (!theme && match)) {
       document.body.classList.add('dark');
       const hl = document.querySelector('link#hl');
-      if (hl) hl.href = '/hl-dark.css';
-    }</script><div class=wrapper><p class=error><span>404</span> <span>Not Found</span></p><a class=instant href=/>« back to home »</a></div><script src=/js/main.js></script>
+      if (hl) hl.href = 'https://maindak.is-a.dev/hl-dark.css';
+    }
+  </script>
+  
+  
+<div class="wrapper">
+  <p class="error">
+    404 Not Found
+  </p>
+  <a class="instant" href="https://maindak.is-a.dev">« back to home »</a>
+</div>
+
+  
+  <script src="https://maindak.is-a.dev/js/main.js"></script>
+</body>
+
+</html>

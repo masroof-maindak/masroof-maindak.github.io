@@ -4,7 +4,6 @@ date = 2024-04-28
 draft = false
 
 [taxonomies]
-categories = ["Media"]
 tags = ["Dark Souls III", "From Software", "Souls"]
 
 [extra]

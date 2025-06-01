@@ -4,7 +4,6 @@ date = 2023-09-01
 draft = false
 
 [taxonomies]
-categories = ["Computer Science"]
 tags = ["Linux","MacBook"]
 
 [extra]
@@ -79,7 +78,7 @@ For natural scrolling, tap-to-click and two-finger-right-click.
 
 Add `Xft.dpi: 192` in `~/.Xresources` (to ensure that it's run on startup, add `xrdb -merge ~/.Xresources` in your `~/.xinitrc`), and
 
-```bash
+```.bash_profile
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5

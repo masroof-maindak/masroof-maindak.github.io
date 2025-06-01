@@ -1,8 +1,11 @@
 +++
 title = "Projects"
-description = "Abominations."
-template = "projects.html"
+description = ""
+template = "prose.html"
 
 [extra]
-lang = 'en'
+title = "Arcana"
+subtitle = "Abominations bequeathed upon the world."
 +++
+
+{{ collection(file="projects.toml") }}

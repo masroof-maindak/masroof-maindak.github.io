@@ -1,10 +1,9 @@
 +++
-title = "Jusant"
+title = "Jusant - Review"
 date = 2025-04-25
 draft = false
 
 [taxonomies]
-categories = ["Media"]
 tags = ["Jusant", "Game Review"]
 
 [extra]

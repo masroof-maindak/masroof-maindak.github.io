@@ -1,0 +1,69 @@
+[[collection]]
+type = "card"
+title = "musannif"
+content = "Collaborative Markdown editor."
+tags = ["Go", "Distributed Systems"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/musannif-md/musannif" },
+]
+
+[[collection]]
+type = "card"
+title = "musawwir"
+content = "Lightweight Linux image drawing tool."
+tags = ["Linux", "C"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/musawwir" },
+]
+
+[[collection]]
+type = "card"
+title = "lughat"
+content = "CLI client for Google Gemini."
+tags = ["Rust", "LLMs"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/lughat" },
+]
+
+[[collection]]
+type = "card"
+title = "nuktah"
+content = "Compiler for the Nuktah programming language."
+tags = ["Compilers", "Rust"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/nuktah" },
+]
+
+[[collection]]
+type = "card"
+title = "ghonsla"
+content = "Rudimentary, virtual, FAT-like filesystem."
+tags = ["Filesystems", "Linux", "C"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/ghonsla" },
+]
+
+[[collection]]
+type = "card"
+title = "jalebi"
+content = "Lightweight multi-threaded cloud storage service."
+tags = ["Networking", "Linux", "C"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/jalebi" },
+]
+
+[[collection]]
+type = "card"
+title = "darakht"
+content = "Merkle Tree library."
+tags = ["Cryptography", "Go"]
+img = ""
+links = [
+  { name = "GitHub", url = "https://github.com/masroof-maindak/darakht" },
+]

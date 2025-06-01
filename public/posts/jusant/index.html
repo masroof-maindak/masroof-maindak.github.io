@@ -1,7 +1,249 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content="light dark" name=color-scheme><title>Jusant</title><link href=/img/favicon-32x32.png rel=icon sizes=32x32 type=image/png><link href=/img/favicon-16x16.png rel=icon sizes=16x16 type=image/png><link href=/img/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><style>@font-face{font-display:swap;font-family:IBM Plex Sans;font-style:normal;font-weight:400;src:url(../font/ibm-plex-sans-v19-latin-regular.woff2)format("woff2")}@font-face{font-display:swap;font-family:IBM Plex Mono;font-style:normal;font-weight:400;src:url(../font/ibm-plex-mono-v19-latin-regular.woff2)format("woff2")}</style><style>body{--primary-color:#bf7979;--primary-pale-color:#ddcebc;--text-color:#64513e;--text-pale-color:#a0907d;--bg-color:#f1e3d1;--highlight-mark-color:#cc241d;--callout-note-color:#d09700;--callout-important-color:#d09700;--callout-warning-color:#945581;--callout-alert-color:#933;--callout-question-color:#75858c;--callout-tip-color:#908d6a}body.dark{--primary-color:#db930d;--primary-pale-color:#4d3f32;--text-color:#ebe0bb;--text-pale-color:#b8a58c;--bg-color:#242015;--highlight-mark-color:#cc241d;--callout-note-color:#c1666b;--callout-important-color:#c1666b;--callout-warning-color:#ba6d36;--callout-alert-color:#a82d56;--callout-question-color:#91506c;--callout-tip-color:#7a7653}body{--main-font:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--code-font:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--homepage-max-width:768px;--main-max-width:768px;--avatar-size:60px;--icon-size:20px;--homepage-font-size:16px;--homepage-line-height:1.75;--paragraph-font-size:16px;--paragraph-line-height:1.75;--aside-font-size:15px;--img-border-radius:0px;--callout-border-radius:0px;--detail-border-radius:0px;--dark-mode-img-brightness:.75;--dark-mode-chart-brightness:.75;--inline-code-border-radius:2px;--inline-code-bg-color:var(--primary-pale-color);--block-code-border-radius:0px;--block-code-border-color:var(--primary-color);--detail-border-color:var(--primary-color)}</style><link href=/main.css rel=stylesheet><link href=/hl-light.css id=hl rel=stylesheet><body class=post><script>const theme = sessionStorage.getItem('theme');
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  
+  
+    
+  
+  <meta name="description" content="Murky personal website.">
+
+  <title>Jusant - Review</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://maindak.is-a.dev/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://maindak.is-a.dev/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://maindak.is-a.dev/img/apple-touch-icon.png">
+  <style>
+
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/ibm-plex-sans-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ibm-plex-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/ibm-plex-mono-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+</style>
+
+  <style>
+
+  /* light mode colors */
+  body {
+    --primary-color: #BF7979;
+    --primary-pale-color: #DDCEBC;
+    --primary-decoration-color: #DDCEBC;
+    --bg-color: #F1E3D1;
+    --text-color: #64513E;
+    --text-pale-color: #A0907D;
+    --text-decoration-color: #75858c;
+	  --highlight-mark-color: #993333;
+
+    --callout-note-color: #d09700;
+    --callout-tip-color: #908d6a;
+    --callout-important-color: #d09700;
+    --callout-warning-color: #945581;
+    --callout-caution-color: #993333;
+  }
+
+  /* dark mode colors */
+  body.dark {
+    --primary-color: #db930d;
+    --primary-pale-color: #4D3F32;
+    --primary-decoration-color: #3a3124;
+    --bg-color: #242015;
+    --text-color: #ebe0bb;
+    --text-pale-color: #b8a58c;
+    --text-decoration-color: #91506c;
+    --highlight-mark-color: #cc241d;
+
+    --callout-note-color: #C1666B;
+    --callout-tip-color: #7A7653;
+    --callout-important-color: #C1666B;
+    --callout-warning-color: #BA6D36;
+    --callout-caution-color: #a82d56;
+  }
+
+  /* typography */
+  body {
+    --main-font: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --code-font: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --homepage-max-width: 768px;
+    --main-max-width: 768px;
+    --avatar-size: 60px;
+    --font-size: 16px;
+    --line-height: 1.75;
+    --img-border-radius: 0px;
+    --detail-border-radius: 0px;
+    --dark-mode-img-brightness: 0.75;
+    --dark-mode-chart-brightness: 0.75;
+    --inline-code-border-radius: 2px;
+    --inline-code-bg-color: var(--primary-decoration-color);
+    --block-code-border-radius: 0px;
+    --block-code-border-color: var(--primary-color);
+    --detail-border-color: var(--primary-color);
+  }
+
+</style>
+
+  <link rel="stylesheet" href="https://maindak.is-a.dev/main.css">
+  
+
+<link id="hl" rel="stylesheet" type="text/css" href="/hl-light.css" />
+
+
+
+  
+</head>
+
+<body class="post">
+  
+  <script>
+    const theme = sessionStorage.getItem('theme');
     const match = window.matchMedia("(prefers-color-scheme: dark)").matches
     if ((theme && theme == 'dark') || (!theme && match)) {
       document.body.classList.add('dark');
       const hl = document.querySelector('link#hl');
-      if (hl) hl.href = '/hl-dark.css';
-    }</script><header><div id=header-wrapper><nav><a class=instant href=/>masroof-maindak</a><button aria-label="toggle expand" class=separator id=toggler>/</button><span class="wrap left fold">{</span><a class=instant href=/posts>posts</a><span class="wrap-separator fold">,</span><a class="instant fold" href=/projects>projects</a><span class="wrap right fold">} ;</span></nav><div id=btns><button aria-label="theme switch" id=theme-toggle><span class=moon-icon><svg viewbox="0 0 24 24" height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill=currentColor></path></svg></span> <span class=sun-icon><svg viewbox="0 0 24 24" height=20 width=20 xmlns=http://www.w3.org/2000/svg><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill=currentColor></path></svg></span></button></div></div></header><div id=wrapper><div id=blank></div><aside><button aria-label="back to top" id=back-to-top><svg viewbox="0 0 24 24" height=24 width=24 xmlns=http://www.w3.org/2000/svg><path d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z" fill=currentColor></path></svg></button></aside><main><div><div data-check-icon='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z" fill="currentColor"></path></svg>' data-copy-icon='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z" fill="currentColor"></path></svg>' id=copy-cfg style=display:none></div><article data-backlink-icon='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M9.41421 8L18.0208 16.6066L16.6066 18.0208L8 9.41421V17H6V6H17V8H9.41421Z" fill="currentColor"></path></svg>' class=prose><h1>Jusant</h1><div id=post-info><div id=date><span id=publish>2025-04-25</span></div><div id=tags><a class=instant href=https://maindak.is-a.dev//tags/jusant><span>#</span>Jusant</a><a class=instant href=https://maindak.is-a.dev//tags/game-review><span>#</span>Game Review</a></div></div><h2 id=n-a-french-nautical-term-for-a-receding-tide>(n.): a French nautical term for a receding tide.<a aria-label="Anchor link for: n-a-french-nautical-term-for-a-receding-tide" class=zola-anchor href=#n-a-french-nautical-term-for-a-receding-tide style=visibility:hidden></a></h2><img src=https://maindak.is-a.dev/processed_images/jusant.6c2400e8418cdb70.png><p>Jusant is, in a nutshell, a game about climbing. It features the story of a boy and his fabled companion scaling a rock pillar of herculean proportion, for reasons that I shan't be sharing as it would be a disservice to potential players (although said reasons shouldn't be too much a challenge to figure out).<p>As they climb, they find symbols of a civilisation now mysteriously extinct: letters, sporadic residences, toys, public baths amidst other incredibly 'human' interactions that make this game truly special.<p>As the newest entry in my catalogue of 'meditative games,' Jusant only serves to further solidify my belief that games are indeed a valid art form - and perhaps the most intricate one at that.<p>There are so many aspects of video game design that Jusant just absolutely nails. The simplistic core gameplay loop that admittedly feels clunky at first but eventually becomes second nature and ever so satisfying (I'd wager it'd feel otherworldly on a Dualsense 5 controller, with the fancy haptics and what-not but I digress), top-notch exploration, <em>unreasonably</em> captivating world-building for a video game with ZERO dialogue, along with the sound design for seemingly inconsequential actions being pulled off to perfection, in addition to the music being cathartic, appropriate and matching its representative biome to a tee.<p>Speaking of biomes, despite the game essentially being centred around a single 'mega-structure,' it varies wildly in ecology and of the six chapters in the game, neither overstayed its welcome particularly long.<p>The way we, as the player, explore the history of this vast yet desolate world alongside the playable character is a delight. I'm an absolute sucker for dead and dying worlds when pulled off right and Jusant indubitably nailed this one. Ironically enough, the world felt surprisingly alive, with its array of flora and fauna and the strewn-about remnants of prior inhabitants.<blockquote><p>In the clouds, I lose my way<br> Wandering through valleys of icy gray,<br> In the clouds, the water watches me stray<br> Will I find my love again one day?<br></blockquote><p>I found myself completely lost analysing the deeply woven web of interpersonal relationships from an era bygone. From cryptic journal entries of prior climbers to letters spanning altitudes, I found myself enraptured with these characters, whom, let alone meeting, we never even get to <em>see.</em> Let that sink in. I know I'm repeating myself, but the whole game has zero spoken words. Truly astounding.<p>One complaint that I absolutely must voice however, is the performance. My Rx6600 was absolutely <em>squealing</em> at 1080p and, although it was capable of handling the game at custom settings ranging from medium to maximum, I turned on FSR2 for a negligible visual penalty but peace of mind over an extended duration of time. Admittedly though, Jusant does make up for it to some extent by virtue of its exuberant art style and scenic panoramas that I just could not get enough of.</article><div class=giscus></div></div><footer><div class=copyright><p>© 2025 Mujtaba Asim</div><div class=credits>powered by <a rel="noreferrer noopener" href=https://www.getzola.org target=_blank>zola</a> and <a rel="noreferrer noopener" href=https://github.com/isunjn/serene target=_blank>serene</a></div></footer></main></div><script src=/js/lightense.min.js></script><script src=/js/main.js></script>
+      if (hl) hl.href = 'https://maindak.is-a.dev/hl-dark.css';
+    }
+  </script>
+  
+  
+<div id="wrapper">
+  <div id="blank"></div>
+  <aside>
+    
+    
+    
+    <button id="back-to-top" aria-label="back to top">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z" fill="currentColor"></path></svg>
+    </button>
+    
+  </aside>
+  <main>
+    
+<header>
+  <nav>
+    <a href="https:&#x2F;&#x2F;maindak.is-a.dev&#x2F;posts">← Back</a>
+  </nav>
+</header>
+
+
+    <div>
+      
+      
+      
+      
+      <div id="copy-cfg" style="display: none;" data-copy-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;" data-check-icon="&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot; width=&quot;20&quot; height=&quot;20&quot;&gt;&lt;path d=&quot;M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z&quot; fill=&quot;currentColor&quot;&gt;&lt;&#x2F;path&gt;&lt;&#x2F;svg&gt;"></div>
+      
+      <article class="prose">
+        <h1>Jusant - Review</h1>
+        <div id="post-info">
+          <div id="date">
+            <span id="publish">2025-04-25</span>
+            </div>
+
+          
+          <div id="tags">
+            <a class="instant" href="https://maindak.is-a.dev//tags/jusant"><span>#</span>Jusant</a><a class="instant" href="https://maindak.is-a.dev//tags/game-review"><span>#</span>Game Review</a>
+          </div>
+          
+        </div>
+
+        
+        
+
+        
+
+        <h2 id="n-a-french-nautical-term-for-a-receding-tide">(n.): a French nautical term for a receding tide.<a class="zola-anchor" href="#n-a-french-nautical-term-for-a-receding-tide" aria-label="Anchor link for: n-a-french-nautical-term-for-a-receding-tide" style="visibility: hidden;"></a>
+</h2>
+
+
+<img src="https:&#x2F;&#x2F;maindak.is-a.dev&#x2F;processed_images&#x2F;jusant.6c2400e8418cdb70.png" />
+
+<p>Jusant is, in a nutshell, a game about climbing. It features the story of a boy and his fabled companion scaling a rock pillar of herculean proportion, for reasons that I shan't be sharing as it would be a disservice to potential players (although said reasons shouldn't be too much a challenge to figure out).</p>
+<p>As they climb, they find symbols of a civilisation now mysteriously extinct: letters, sporadic residences, toys, public baths amidst other incredibly 'human' interactions that make this game truly special.</p>
+<p>As the newest entry in my catalogue of 'meditative games,' Jusant only serves to further solidify my belief that games are indeed a valid art form - and perhaps the most intricate one at that.</p>
+<p>There are so many aspects of video game design that Jusant just absolutely nails. The simplistic core gameplay loop that admittedly feels clunky at first but eventually becomes second nature and ever so satisfying (I'd wager it'd feel otherworldly on a Dualsense 5 controller, with the fancy haptics and what-not but I digress), top-notch exploration, <em>unreasonably</em> captivating world-building for a video game with ZERO dialogue, along with the sound design for seemingly inconsequential actions being pulled off to perfection, in addition to the music being cathartic, appropriate and matching its representative biome to a tee.</p>
+<p>Speaking of biomes, despite the game essentially being centred around a single 'mega-structure,' it varies wildly in ecology and of the six chapters in the game, neither overstayed its welcome particularly long.</p>
+<p>The way we, as the player, explore the history of this vast yet desolate world alongside the playable character is a delight. I'm an absolute sucker for dead and dying worlds when pulled off right and Jusant indubitably nailed this one. Ironically enough, the world felt surprisingly alive, with its array of flora and fauna and the strewn-about remnants of prior inhabitants.</p>
+<blockquote>
+<p>In the clouds, I lose my way<br>
+Wandering through valleys of icy gray,<br>
+In the clouds, the water watches me stray<br>
+Will I find my love again one day?<br></p>
+</blockquote>
+<p>I found myself completely lost analysing the deeply woven web of interpersonal relationships from an era bygone. From cryptic journal entries of prior climbers to letters spanning altitudes, I found myself enraptured with these characters, whom, let alone meeting, we never even get to <em>see.</em> Let that sink in. I know I'm repeating myself, but the whole game has zero spoken words. Truly astounding.</p>
+<p>One complaint that I absolutely must voice however, is the performance. My Rx6600 was absolutely <em>squealing</em> at 1080p and, although it was capable of handling the game at custom settings ranging from medium to maximum, I turned on FSR2 for a negligible visual penalty but peace of mind over an extended duration of time. Admittedly though, Jusant does make up for it to some extent by virtue of its exuberant art style and scenic panoramas that I just could not get enough of.</p>
+
+      </article>
+
+      
+      
+
+      
+      
+      <div class="giscus"></div>
+      
+      
+    </div>
+
+    
+
+
+<footer>
+  <div class="left">
+    <div class="copyright">
+      © 2025 Mujtaba Asim
+      
+      <span>|</span>
+      Built with <a href="https://www.getzola.org" rel="noreferrer" target="_blank">zola</a> and <a href="https://github.com/isunjn/serene" rel="noreferrer" target="_blank">serene</a>
+      
+    </div>
+  </div>
+
+  <div class="right">
+    
+    
+    
+    
+
+    
+    
+    
+    <button id="theme-toggle" aria-label="theme switch">
+      <span class="moon-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z" fill="currentColor"></path></svg></span>
+      <span class="sun-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="currentColor"></path></svg></span>
+    </button>
+    
+  </div>
+</footer>
+
+
+
+
+
+  </main>
+</div>
+
+  
+<script src="/js/lightense.min.js"></script>
+
+
+  <script src="https://maindak.is-a.dev/js/main.js"></script>
+</body>
+
+</html>
