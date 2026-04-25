@@ -3,7 +3,7 @@ title = "Slave Knight Gael"
 date = 2024-04-28
 ---
 
-![Slave Knight Gael](../img/SlaveKnightGael.png)
+![Slave Knight Gael](../img/SlaveKnightGael.jpg)
 
 Gael's truly the greatest (real) finale that Dark Souls as a franchise could
 have asked for.

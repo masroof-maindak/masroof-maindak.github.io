@@ -5,7 +5,7 @@ date = 2025-04-25
 
 > Imagine Bloodborne but you play as a twink.
 
-![Lies of P - Cathedral Balcony](../img/Lies_of_P_-_Cathedral_Balcony.png)
+![Lies of P - Cathedral Balcony](../img/Lies_of_P_-_Cathedral_Balcony.jpg)
 
 Lies of P is perhaps the greatest Soulslike game I've played that hasn't been
 developed by From Software.
@@ -60,4 +60,4 @@ The game ended on an absolutely scrumptious and unforeseen post-credits cut
 scene featuring another popular fairy tale character, leaving much to be desired
 in a potential DLC or sequel.
 
-![Lies of P - Saintess of Mercy Statue](../img/Lies_of_P_-_Saintess_of_Mercy_Statue.png)
+![Lies of P - Saintess of Mercy Statue](../img/Lies_of_P_-_Saintess_of_Mercy_Statue.jpg)

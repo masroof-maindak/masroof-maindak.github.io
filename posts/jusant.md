@@ -5,7 +5,7 @@ date = 2025-04-25
 
 ## (n.): a French nautical term for a receding tide.
 
-![Jusant](../img/jusant.png)
+![Jusant](../img/jusant.jpg)
 
 Jusant is, in a nutshell, a game about climbing. It features the story of a boy
 and his fabled companion scaling a rock pillar of herculean proportion, for
