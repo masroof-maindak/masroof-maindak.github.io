@@ -1,0 +1,63 @@
+page_title = "Swamp::Arcana"
+title = "Arcana."
+desc = "Abominations bequethed upon God's green Earth."
+
+[[projects]]
+name = "qalam"
+desc = "Swampy static-site generator; showcased."
+tags = ["Rust", "Web"]
+url = "https://github.com/masroof-maindak/qalam"
+
+[[projects]]
+name = "nuktah"
+desc = "Compiler for the Nuktah programming language."
+tags = ["Rust", "Compilers"]
+url = "https://github.com/masroof-maindak/nuktah"
+
+[[projects]]
+name = "kinara-daryaft"
+desc = "Despicable implementation of a Canny Edge Detector in C++."
+tags = ["C++", "Computer Vision"]
+url = "https://github.com/masroof-maindak/kinara-daryaft"
+
+[[projects]]
+name = "jalebi"
+desc = "Lightweight multi-threaded cloud storage service. "
+tags = ["C", "Systems"]
+url = "https://github.com/masroof-maindak/jalebi"
+
+[[projects]]
+name = "ghonsla"
+desc = "Rudimentary, virtual, FAT-like filesystem. "
+tags = ["C", "Filesystems"]
+url = "https://github.com/masroof-maindak/ghonsla"
+
+[[projects]]
+name = "darakht"
+desc = "Merkle Tree library."
+tags = ["Go", "Cryptography"]
+url = "https://github.com/masroof-maindak/darakht"
+
+[[projects]]
+name = "tile2wall"
+desc = "Quick and dirty tool to convert an image to a tiled wallpaper. "
+tags = ["Python", "OpenCV"]
+url = "https://github.com/masroof-maindak/kinara-daryaft"
+
+[[projects]]
+name = "dir2txt"
+desc = "Convert a directory to text."
+tags = ["Rust", "Tools"]
+url = "https://github.com/masroof-maindak/dir2txt"
+
+[[projects]]
+name = "bit-scribers"
+desc = "Horrendous variable-length integer decoding in Rust."
+tags = ["Rust", "Systems"]
+url = "https://github.com/masroof-maindak/bit-scribers"
+
+[[projects]]
+name = "kyria-rev3"
+desc = "ZMK config for my ergonomic, split mechanical keyboard."
+tags = ["Hardware", "Embedded"]
+url = "https://github.com/masroof-maindak/zmk"
