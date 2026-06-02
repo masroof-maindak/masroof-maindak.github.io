@@ -5,8 +5,8 @@
 we care about a random variable is that it quite elegantly maps to a probability
 distribution, be it <em>discrete</em> or <em>continuous</em>.</p>
 <p>Regardless of the type, it describes how the probabilities are distributed over
-the possible outcomes (random values, i.e <code>x_1, x_2 ... x_n</code>) of the random
-variable, X.</p>
+the possible outcomes (random values, i.e <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>…</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">x_1, x_2 \dots x_n</annotation></semantics></math></span>) of the random
+variable, <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span>.</p>
 <h2>What is meant by the entropy of a distribution?</h2>
 <p>Intuitively: events that are rare are more surprising, and therefore more
 valuable than ‘common’ ones in terms of the information they bring.</p>
@@ -20,15 +20,16 @@ information (since two successful independent occurrences carry twice as much
 information as one)</li>
 </ol>
 <h2>Self-information</h2>
-<p>(AKA the information content/self-entropy) of an event <code>X = x</code> is:
-<code>I(x) = -log(P(x))</code>, and is measured in ‘nats’ (assuming the log applied is a
-natural log w/ base <code>e</code>; different bases output units other than nats).</p>
+<p>(AKA the information content/self-entropy) of an event <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">X = x</annotation></semantics></math></span> is</p>
+<p><span class="katex-display"><span class="katex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mo>\log</mo><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I(x) = -\log(P(x))</annotation></semantics></math></span></span></p>
+<p>-and is measured in ‘nats’ (assuming the log applied is a natural log w/ base
+<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span>; different bases output units other than nats).</p>
 <p>The key takeaway here is that the self-entropy is simply the ‘negative log
-probability’ of some arbitrary event <em>x</em>, from the random variable <em>X</em>.</p>
+probability’ of some arbitrary event <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span>, from the random variable <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span>.</p>
 <h2>Why use the log-probability in particular?</h2>
 <blockquote>
-<p>Log probability: Alternate representation of probabilities on a logarithmic
-scale <code>(-inf,0]</code> rather than b/w <code>[0,1]</code>.</p>
+<p>Log probability is an alternate representation of probabilities on a
+logarithmic scale <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mi>i</mi><mi>n</mi><mi>f</mi><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">(-inf,0]</annotation></semantics></math></span> rather than b/w <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math></span>.</p>
 </blockquote>
 <p>Since it beautifully maps the desired requirements of our
 information-accumulating system, or more pedantically, the three axioms required
@@ -49,13 +50,14 @@ rare events should carry more information content.</li>
 <blockquote>
 <ul>
 <li>Formally: Expected value of the self-information of a random variable.</li>
-<li>Mathematically: Entropy <em>H(X)</em> measures the average uncertainty or
-information content in a probability distribution <em>p(x)</em> over all possible
-outcomes of a random variable <em>X</em>.</li>
+<li>Mathematically: Entropy <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X)</annotation></semantics></math></span> measures the average uncertainty or
+information content in a probability distribution <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(x)</annotation></semantics></math></span> over all possible
+outcomes of a random variable <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span>.</li>
 <li>Intuitively: Expected amount of information in an event drawn from a
 distribution; alternatively: how much information each observation provides.</li>
 </ul>
-<p><code>H(X) = -sum(p(x) * I(x))</code> where x (event) belongs to X (random variable).</p>
+<p><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mo>∑</mo><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>∗</mo><mi>I</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">H(X) = - \sum(p(x) * I(x))</annotation></semantics></math></span> where <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span> (event) belongs to <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span> (random
+variable).</p>
 </blockquote>
 <ul>
 <li>As Discussed in <strong>B.</strong>, self information quantifies a single outcome’s
@@ -74,19 +76,20 @@ distributions over the same random variable are.</p>
 <p>I’m not going into the derivation of this expression, but it’s not incredibly
 challenging to comprehend, and Sebastian Hoenig’s site in the acknowledgements
 links has a decent proof, should you wish to dive deeper.</p>
-<p>For now, just know that the KL-Divergence states:
-<code>D_KL(P || Q) = sum( P(x) * log (P(x)/Q(x)) )</code> for all x within X, where P and Q
-are different probability distributions.</p>
+<p>For now, just know that the KL-Divergence states:</p>
+<p><span class="katex-display"><span class="katex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mrow><mi>K</mi><mi>L</mi></mrow></msub><mo stretchy="false">(</mo><mi>P</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mo>∑</mo><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>∗</mo><mo>\log</mo><mfrac><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mrow><mi>Q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">D_{KL}(P || Q) = \sum P(x) * \log \frac{P(x)}{Q(x)}</annotation></semantics></math></span></span></p>
+<p>-for all <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span> within <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span>, where <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span> and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span> are different probability
+distributions.</p>
 <p>Since the KL-divergence is a measure of distance, it is ostensibly sensible to
 start w/ attempting to minimise this value in an attempt to minimise the
 distance b/w the true distribution and our model’s predicted distribution.</p>
-<p>Replacing <code>P</code> and <code>Q</code> w/ <code>y</code> and <code>yhat</code> respectively, and expanding the log out
-(as per the log division rule) out, we ultimately obtain:
-<code>D_KL(y || yhat) = sum(y_i log y_i) - sum(y_i log yhat_i)</code></p>
+<p>Replacing <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span> and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span> w/ <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span> and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>y</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{y}</annotation></semantics></math></span> respectively, and expanding the log
+out (as per the log division rule) out, we ultimately obtain:</p>
+<p><span class="katex-display"><span class="katex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mrow><mi>K</mi><mi>L</mi></mrow></msub><mo stretchy="false">(</mo><mi>y</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mover accent="true"><mi>y</mi><mo>^</mo></mover><mo stretchy="false">)</mo><mo>=</mo><mo>∑</mo><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>\log</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo>−</mo><mo>∑</mo><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>\log</mo><msub><mover accent="true"><mi>y</mi><mo>^</mo></mover><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">D_{KL}(y || \hat{y}) = \sum{y_i \log y_i} - \sum{y_i \log \hat{y}_i}</annotation></semantics></math></span></span></p>
 <p>That is to say:</p>
-<p><code>D_KL(y || yhat) = -H(y) + H(y, y_hat)</code></p>
-<p>FIXME:</p>
-<p>Notice how the first summation term (i.e <code>-H(y)</code>) has no sign of <code>y_hat</code>. This
+<p><span class="katex-display"><span class="katex"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mrow><mi>K</mi><mi>L</mi></mrow></msub><mo stretchy="false">(</mo><mi>y</mi><mi mathvariant="normal">∣</mi><mi mathvariant="normal">∣</mi><mover accent="true"><mi>y</mi><mo>^</mo></mover><mo stretchy="false">)</mo><mo>=</mo><mo>−</mo><mi>H</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo><mo>+</mo><mi>H</mi><mo stretchy="false">(</mo><mi>y</mi><mo separator="true">,</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">D_{KL}(y || \hat{y}) = -H(y) + H(y, \hat{y})</annotation></semantics></math></span></span></p>
+<h4>FIXME:</h4>
+<p>Notice how the first summation term (i.e <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>H</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">-H(y)</annotation></semantics></math></span>) has no sign of <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>y</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{y}</annotation></semantics></math></span>. This
 allows us to affirm that minimising the cross-entropy loss is equivalent to the
 minimising the KL divergence, thereby bringing our prediction distribution,
 closer to the true distribution.</p>
