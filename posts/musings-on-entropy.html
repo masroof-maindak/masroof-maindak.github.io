@@ -20,24 +20,19 @@ information (since two successful independent occurrences carry twice as much
 information as one)</li>
 </ol>
 <h2>C. Self-information</h2>
-<p>(AKA the information content/self-entropy) of an event x = <em>x</em> is:
-<code>I(_x_) = -log(P(_x_))</code>, and is measured in nats (assuming log is a natural log
-w/ base <code>e</code>; different bases output different units – same thing, different
-scale)</p>
-<ul>
-<li>We observe that the self-entropy is simply the ‘negative log probability’ of
-an arbitrary event <em>x</em>.</li>
-</ul>
+<p>(AKA the information content/self-entropy) of an event <code>X = x</code> is:
+<code>I(x) = -log(P(x))</code>, and is measured in nats (assuming log is a natural log w/
+base <code>e</code>; different bases output different units – same thing, different scale)</p>
+<p>The key takeaway here is that the self-entropy is simply the ‘negative log
+probability’ of an arbitrary event <em>x</em>.</p>
 <h2>D. Why do we use the log-probability in particular?</h2>
 <blockquote>
 <p>Log probability: Alternate representation of probabilities on a logarithmic
-scale (-inf,0] rather than b/w [0,1].</p>
+scale <code>(-inf,0]</code> rather than b/w <code>[0,1]</code>.</p>
 </blockquote>
-<ul>
-<li>Since it beautifully maps the desired requirements of our
-information-accumulating system, or more pedantically, the three axioms
-required to fulfill Shannon’s definition of self information.</li>
-</ul>
+<p>Since it beautifully maps the desired requirements of our
+information-accumulating system, or more pedantically, the three axioms required
+to fulfill Shannon’s definition of self information.</p>
 <ol>
 <li>As the probabilities of independent events are generally <em>supposed to</em>
 multiply, and logarithms convert multiplication to addition, the <em>log</em>
@@ -61,7 +56,7 @@ outcomes of a random variable <em>X</em>.</li>
 <li>Intuitively: Expected amount of information in an event drawn from a
 distribution; alternatively: how much information each observation provides.</li>
 </ul>
-<p><code>H(X) = - sum(p(x) * I(x))</code> where x (event) belongs to X (random variable).</p>
+<p><code>H(X) = -sum(p(x) * I(x))</code> where x (event) belongs to X (random variable).</p>
 </blockquote>
 <ul>
 <li>As Discussed in <strong>B.</strong>, self information quantifies a single outcome’s
@@ -74,9 +69,9 @@ weighted by their corresponding outcome’s probability. A higher probability
 consequently resulting in a smaller multiplication result, thereby ultimately
 contributing less to the summation.</li>
 </ul>
-<h2><!-- CHECK: horizontal line separator doesn't work? --></h2>
-<p>The Kullback-Leibler (KL) Divergence is a metric of measure for how different
-two separate probability distributions over the same random variable are.</p>
+<h2>Kullback-Leibler (KL) Divergence</h2>
+<p>KL Divergence is a metric of measure for how different two separate probability
+distributions over the same random variable are.</p>
 <p>I’m not going into the derivation of this expression, but it’s not incredibly
 challenging to comprehend, and Sebastian Hoenig’s site in the acknowledgements
 links has a decent proof, should you wish to dive deeper.</p>
@@ -89,8 +84,8 @@ distance b/w the true distribution and our model’s predicted distribution.</p>
 <p>Replacing <code>P</code> and <code>Q</code> w/ <code>y</code> and <code>yhat</code> respectively, and expanding the log out
 (as per the log division rule) out, we ultimately obtain:
 <code>D_KL(y || yhat) = sum(y_i log y_i) - sum(y_i log yhat_i)</code></p>
-<p>i.e</p>
-<p><code>D_KL(y || yhat) = - H(y) + H(y, y_hat)</code></p>
+<p>That is to say:</p>
+<p><code>D_KL(y || yhat) = -H(y) + H(y, y_hat)</code></p>
 <p>Notice how the first summation term (i.e <code>-H(y)</code>) has no sign of <code>y_hat</code>. This
 allows us to affirm that minimising the cross-entropy loss is equivalent to the
 minimising the KL divergence, thereby bringing our prediction distribution,
