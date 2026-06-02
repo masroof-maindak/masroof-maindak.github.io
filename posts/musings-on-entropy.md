@@ -8,7 +8,7 @@ draft = false
 
 I wanted to learn about how cross-entropy loss works in Machine Learning.
 
-## A. What is a random variable X?
+## What is a random variable X?
 
 An assignment of _numbers_ to **outcomes** of a _random experiment_. The reason
 we care about a random variable is that it quite elegantly maps to a probability
@@ -18,7 +18,7 @@ Regardless of the type, it describes how the probabilities are distributed over
 the possible outcomes (random values, i.e `x_1, x_2 ... x_n`) of the random
 variable, X.
 
-## B. What is meant by the entropy of a distribution?
+## What is meant by the entropy of a distribution?
 
 Intuitively: events that are rare are more surprising, and therefore more
 valuable than 'common' ones in terms of the information they bring.
@@ -31,24 +31,23 @@ valuable than 'common' ones in terms of the information they bring.
    information (since two successful independent occurrences carry twice as much
    information as one)
 
-## C. Self-information
+## Self-information
 
-(AKA the information content/self-entropy) of an event x = _x_ is:
-`I(_x_) = -log(P(_x_))`, and is measured in nats (assuming log is a natural log
-w/ base `e`; different bases output different units -- same thing, different
-scale)
+(AKA the information content/self-entropy) of an event `X = x` is:
+`I(x) = -log(P(x))`, and is measured in 'nats' (assuming the log applied is a
+natural log w/ base `e`; different bases output units other than nats).
 
-- We observe that the self-entropy is simply the 'negative log probability' of
-  an arbitrary event _x_.
+The key takeaway here is that the self-entropy is simply the 'negative log
+probability' of some arbitrary event _x_, from the random variable _X_.
 
-## D. Why do we use the log-probability in particular?
+## Why use the log-probability in particular?
 
 > Log probability: Alternate representation of probabilities on a logarithmic
-> scale (-inf,0] rather than b/w [0,1].
+> scale `(-inf,0]` rather than b/w `[0,1]`.
 
-- Since it beautifully maps the desired requirements of our
-  information-accumulating system, or more pedantically, the three axioms
-  required to fulfill Shannon's definition of self information.
+Since it beautifully maps the desired requirements of our
+information-accumulating system, or more pedantically, the three axioms required
+to fulfill Shannon's definition of self information.
 
 1. As the probabilities of independent events are generally _supposed to_
    multiply, and logarithms convert multiplication to addition, the _log_
@@ -58,10 +57,8 @@ scale)
    magnitude of the logarithm increases, satisfying our second requirement i.e
    rare events should carry more information content.
 
-## E. What is meant by the entropy of a distribution (02)?
+## What is meant by the entropy of a distribution (02)?
 
-> **Entropy**
->
 > - Formally: Expected value of the self-information of a random variable.
 > - Mathematically: Entropy _H(X)_ measures the average uncertainty or
 >   information content in a probability distribution _p(x)_ over all possible
@@ -69,7 +66,7 @@ scale)
 > - Intuitively: Expected amount of information in an event drawn from a
 >   distribution; alternatively: how much information each observation provides.
 >
-> `H(X) = - sum(p(x) * I(x))` where x (event) belongs to X (random variable).
+> `H(X) = -sum(p(x) * I(x))` where x (event) belongs to X (random variable).
 
 - As Discussed in **B.**, self information quantifies a single outcome's
   'surprise'
@@ -81,10 +78,10 @@ scale)
   consequently resulting in a smaller multiplication result, thereby ultimately
   contributing less to the summation.
 
-## <!-- CHECK: horizontal line separator doesn't work? -->
+## Kullback-Leibler (KL) Divergence
 
-The Kullback-Leibler (KL) Divergence is a metric of measure for how different
-two separate probability distributions over the same random variable are.
+KL Divergence is a metric of measure for how different two separate probability
+distributions over the same random variable are.
 
 I'm not going into the derivation of this expression, but it's not incredibly
 challenging to comprehend, and Sebastian Hoenig's site in the acknowledgements
@@ -102,9 +99,11 @@ Replacing `P` and `Q` w/ `y` and `yhat` respectively, and expanding the log out
 (as per the log division rule) out, we ultimately obtain:
 `D_KL(y || yhat) = sum(y_i log y_i) - sum(y_i log yhat_i)`
 
-i.e
+That is to say:
 
-`D_KL(y || yhat) = - H(y) + H(y, y_hat)`
+`D_KL(y || yhat) = -H(y) + H(y, y_hat)`
+
+FIXME:
 
 Notice how the first summation term (i.e `-H(y)`) has no sign of `y_hat`. This
 allows us to affirm that minimising the cross-entropy loss is equivalent to the
@@ -113,12 +112,11 @@ closer to the true distribution.
 
 ## Acknowledgements
 
-- https://statgrades.berkeley.edu/~stark/SticiGui/Text/randomVariables.htm
-- https://www.deeplearningbook.org/contents/prob.html
-- https://en.wikipedia.org/wiki/Information_content#Definition
-- https://en.wikipedia.org/wiki/Log_probability
-- https://stackoverflow.com/a/63372831
-- https://eoinmurray.info/aliens-and-self-information
-- https://eoinmurray.info/primer-entropy-from-self-information
-- https://sebastianhoenig.com/blog/cross-entropy/
-- https://www.deeplearningbook.org/contents/prob.html
+- <https://statgrades.berkeley.edu/~stark/SticiGui/Text/randomVariables.htm>
+- <https://www.deeplearningbook.org/contents/prob.html>
+- <https://en.wikipedia.org/wiki/Information_content#Definition>
+- <https://en.wikipedia.org/wiki/Log_probability>
+- <https://stackoverflow.com/a/63372831>
+- <https://eoinmurray.info/aliens-and-self-information>
+- <https://eoinmurray.info/primer-entropy-from-self-information>
+- <https://sebastianhoenig.com/blog/cross-entropy/>
