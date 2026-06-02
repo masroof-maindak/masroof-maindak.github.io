@@ -1,15 +1,27 @@
 ---
-title = "Musings on Entropy" date = 2026-06-02
+title = "Musings on Entropy"
+date = 2026-06-02
+draft = false
 ---
+
+## Why?
+
+I wanted to learn about how cross-entropy loss works in Machine Learning.
 
 ## A. What is a random variable X?
 
-- An assignment of _numbers_ to **outcomes** of a _random experiment_.
+An assignment of _numbers_ to **outcomes** of a _random experiment_. The reason
+we care about a random variable is that it quite elegantly maps to a probability
+distribution, be it _discrete_ or _continuous_.
+
+Regardless of the type, it describes how the probabilities are distributed over
+the possible outcomes (random values, i.e `x_1, x_2 ... x_n`) of the random
+variable, X.
 
 ## B. What is meant by the entropy of a distribution?
 
-- Intuitively: events that are rare are more surprising and therefore more
-  valuable than 'common' ones in terms of the information they bring.
+Intuitively: events that are rare are more surprising, and therefore more
+valuable than 'common' ones in terms of the information they bring.
 
 1. Likely events should have low information content (guaranteed event = no
    information)
@@ -26,9 +38,8 @@ title = "Musings on Entropy" date = 2026-06-02
 w/ base `e`; different bases output different units -- same thing, different
 scale)
 
-- We observe that the self-entropy is shrimply the 'negative log probability' of
+- We observe that the self-entropy is simply the 'negative log probability' of
   an arbitrary event _x_.
-- Now this begs the question;
 
 ## D. Why do we use the log-probability in particular?
 
@@ -47,7 +58,7 @@ scale)
    magnitude of the logarithm increases, satisfying our second requirement i.e
    rare events should carry more information content.
 
-D. What is meant by the entropy of a distribution?
+## E. What is meant by the entropy of a distribution (02)?
 
 > **Entropy**
 >
@@ -56,49 +67,53 @@ D. What is meant by the entropy of a distribution?
 >   information content in a probability distribution _p(x)_ over all possible
 >   outcomes of a random variable _X_.
 > - Intuitively: Expected amount of information in an event drawn from a
->   distribution
+>   distribution; alternatively: how much information each observation provides.
 >
 > `H(X) = - sum(p(x) * I(x))` where x (event) belongs to X (random variable).
 
-- AKA Shannon Entropy
-- Self information quantifies a single outcome's 'surprise'
-- It can be spanned over the entire distribution via Shannon Entropy AKA entropy
-- Intuitively speaking, it is trivially the aggregation of all the 'self
-  informations,' weighted by each event's probability. Higher probability
-  (bounded by 1) => lower log-probability => smaller multiplication result =>
-  lesser contribution in summation.
+- As Discussed in **B.**, self information quantifies a single outcome's
+  'surprise'
+- Using the aforementioned concepts, we see that entropy can be extrapolated to
+  the entire distribution.
+- This is trivial to do by merely aggregating all the 'self informations,'
+  weighted by their corresponding outcome's probability. A higher probability
+  (bounded by 1) means that that outcome would have a lower log-probability,
+  consequently resulting in a smaller multiplication result, thereby ultimately
+  contributing less to the summation.
 
----
+## <!-- CHECK: horizontal line separator doesn't work? -->
 
 The Kullback-Leibler (KL) Divergence is a metric of measure for how different
 two separate probability distributions over the same random variable are.
 
 I'm not going into the derivation of this expression, but it's not incredibly
-challenging to comprehend, and the first site (sebastian hoenig) in the attached
-links has a decent proof.
+challenging to comprehend, and Sebastian Hoenig's site in the acknowledgements
+links has a decent proof, should you wish to dive deeper.
 
 For now, just know that the KL-Divergence states:
-`D_KL(P || Q) = sum( P(x) * log (P(x)/Q(x)) )` for all x within X.
+`D_KL(P || Q) = sum( P(x) * log (P(x)/Q(x)) )` for all x within X, where P and Q
+are different probability distributions.
 
-Since the KL-divergence is a measure of distance, it makes sense to start w/
-attempting to minimise this in an attempt to minimise the distance b/w the true
-distribution and our model's predicted distribution.
+Since the KL-divergence is a measure of distance, it is ostensibly sensible to
+start w/ attempting to minimise this value in an attempt to minimise the
+distance b/w the true distribution and our model's predicted distribution.
 
-Replacing `P` and `Q` w/ `y` and `yhat`, and expanding some log garbage, we get:
-
-`D_KL(P || Q) = sum(y_i log y_i) - sum(y_i log yhat_i)`
+Replacing `P` and `Q` w/ `y` and `yhat` respectively, and expanding the log out
+(as per the log division rule) out, we ultimately obtain:
+`D_KL(y || yhat) = sum(y_i log y_i) - sum(y_i log yhat_i)`
 
 i.e
 
-`D_KL(P || Q) = - H(y) + H(y, y_hat)`
+`D_KL(y || yhat) = - H(y) + H(y, y_hat)`
 
-As the first summation term (i.e `-H(y)`) has no sign of `y_hat`'s
-participation, minimising the cross-entropy loss is equivalent to the minimising
-the KL divergence, thereby bringing our prediction distribution, closer to the
-true distribution.
+Notice how the first summation term (i.e `-H(y)`) has no sign of `y_hat`. This
+allows us to affirm that minimising the cross-entropy loss is equivalent to the
+minimising the KL divergence, thereby bringing our prediction distribution,
+closer to the true distribution.
 
 ## Acknowledgements
 
+- https://statgrades.berkeley.edu/~stark/SticiGui/Text/randomVariables.htm
 - https://www.deeplearningbook.org/contents/prob.html
 - https://en.wikipedia.org/wiki/Information_content#Definition
 - https://en.wikipedia.org/wiki/Log_probability

@@ -1,6 +1,7 @@
 ---
 title = "'Reviving' an old MacBook with Arch Linux"
 date = 2023-09-01
+draft = false
 ---
 
 This entire debacle began when I received an (almost) decade old MacBook Pro. To

@@ -1,6 +1,7 @@
 ---
 title = "Slave Knight Gael"
 date = 2024-04-28
+draft = false
 ---
 
 ![Slave Knight Gael](../img/SlaveKnightGael.jpg)
