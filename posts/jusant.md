@@ -2,6 +2,7 @@
 title = "Jusant - Review"
 date = 2025-04-25
 draft = false
+tags = ["Games", "Jusant", "Meditative Games"]
 ---
 
 ## (n.): a French nautical term for a receding tide.

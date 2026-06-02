@@ -2,6 +2,7 @@
 title = "Lies of P - Review"
 date = 2025-04-25
 draft = false
+tags = ["Games", "Souls"]
 ---
 
 > Imagine Bloodborne but you play as a twink.

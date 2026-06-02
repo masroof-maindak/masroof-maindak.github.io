@@ -2,6 +2,7 @@
 title = "Slave Knight Gael"
 date = 2024-04-28
 draft = false
+tags = ["Games", "Souls", "FromSoftware"]
 ---
 
 ![Slave Knight Gael](../img/SlaveKnightGael.jpg)

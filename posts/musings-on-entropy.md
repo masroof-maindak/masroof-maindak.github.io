@@ -2,6 +2,7 @@
 title = "Musings on Entropy"
 date = 2026-06-02
 draft = false
+tags = ["Machine Learning", "Entropy", "Maths"]
 ---
 
 ## Why?
