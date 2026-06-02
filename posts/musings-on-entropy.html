@@ -1,13 +1,13 @@
 <!DOCTYPE html><html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Musings on Entropy</title></html><link rel="stylesheet" type="text/css" href="../themes/styles.css"><link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg"><link rel="shortcut icon" href="/favicons/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="manifest" href="/favicons/site.webmanifest"><div id="post-page"><a id="back-text" href="/posts">← Back</a><h1 class="post-page-title">Musings on Entropy</h1><span class="post-page-date">2026-06-02</span><h2>Why?</h2>
 <p>I wanted to learn about how cross-entropy loss works in Machine Learning.</p>
-<h2>A. What is a random variable X?</h2>
+<h2>What is a random variable X?</h2>
 <p>An assignment of <em>numbers</em> to <strong>outcomes</strong> of a <em>random experiment</em>. The reason
 we care about a random variable is that it quite elegantly maps to a probability
 distribution, be it <em>discrete</em> or <em>continuous</em>.</p>
 <p>Regardless of the type, it describes how the probabilities are distributed over
 the possible outcomes (random values, i.e <code>x_1, x_2 ... x_n</code>) of the random
 variable, X.</p>
-<h2>B. What is meant by the entropy of a distribution?</h2>
+<h2>What is meant by the entropy of a distribution?</h2>
 <p>Intuitively: events that are rare are more surprising, and therefore more
 valuable than ‘common’ ones in terms of the information they bring.</p>
 <ol>
@@ -19,13 +19,13 @@ information it yields.</li>
 information (since two successful independent occurrences carry twice as much
 information as one)</li>
 </ol>
-<h2>C. Self-information</h2>
+<h2>Self-information</h2>
 <p>(AKA the information content/self-entropy) of an event <code>X = x</code> is:
 <code>I(x) = -log(P(x))</code>, and is measured in ‘nats’ (assuming the log applied is a
 natural log w/ base <code>e</code>; different bases output units other than nats).</p>
 <p>The key takeaway here is that the self-entropy is simply the ‘negative log
 probability’ of some arbitrary event <em>x</em>, from the random variable <em>X</em>.</p>
-<h2>D. Why use the log-probability in particular?</h2>
+<h2>Why use the log-probability in particular?</h2>
 <blockquote>
 <p>Log probability: Alternate representation of probabilities on a logarithmic
 scale <code>(-inf,0]</code> rather than b/w <code>[0,1]</code>.</p>
@@ -45,9 +45,8 @@ probabilities of independent events instead add!
 magnitude of the logarithm increases, satisfying our second requirement i.e
 rare events should carry more information content.</li>
 </ol>
-<h2>E. What is meant by the entropy of a distribution (02)?</h2>
+<h2>What is meant by the entropy of a distribution (02)?</h2>
 <blockquote>
-<p><strong>Entropy</strong></p>
 <ul>
 <li>Formally: Expected value of the self-information of a random variable.</li>
 <li>Mathematically: Entropy <em>H(X)</em> measures the average uncertainty or
@@ -86,6 +85,7 @@ distance b/w the true distribution and our model’s predicted distribution.</p>
 <code>D_KL(y || yhat) = sum(y_i log y_i) - sum(y_i log yhat_i)</code></p>
 <p>That is to say:</p>
 <p><code>D_KL(y || yhat) = -H(y) + H(y, y_hat)</code></p>
+<p>FIXME:</p>
 <p>Notice how the first summation term (i.e <code>-H(y)</code>) has no sign of <code>y_hat</code>. This
 allows us to affirm that minimising the cross-entropy loss is equivalent to the
 minimising the KL divergence, thereby bringing our prediction distribution,
@@ -100,6 +100,5 @@ closer to the true distribution.</p>
 <li><a href="https://eoinmurray.info/aliens-and-self-information">https://eoinmurray.info/aliens-and-self-information</a></li>
 <li><a href="https://eoinmurray.info/primer-entropy-from-self-information">https://eoinmurray.info/primer-entropy-from-self-information</a></li>
 <li><a href="https://sebastianhoenig.com/blog/cross-entropy/">https://sebastianhoenig.com/blog/cross-entropy/</a></li>
-<li><a href="https://www.deeplearningbook.org/contents/prob.html">https://www.deeplearningbook.org/contents/prob.html</a></li>
 </ul>
 </div><footer><span>© 2025 Mujtaba Asim  |  </span><span>Built w/ <a class="footer-link" href="https://github.com/masroof-maindak/qalam">Qalam.</a></span></footer>
