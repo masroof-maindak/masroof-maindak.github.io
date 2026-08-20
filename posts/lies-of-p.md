@@ -40,7 +40,7 @@ might be a fancy combo, and others a parry still - they're varied enough to be
 fresh and the assembly system consequently allows you to mix and match fable
 arts as your heart desires.
 
-Unfortunately, much to much dismay, it is with a heavy heart that I must
+Unfortunately, much to my dismay, it is with a heavy heart that I must
 announce that the boss quality unfortunately can't hold a candle to FromSoft's
 catalogue, with only three particularly memorable encounters.
 

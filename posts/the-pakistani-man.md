@@ -36,5 +36,5 @@ observe that not only is he selling more units via the youth, but also reaching
 new whereabouts previously unbeknownst.
 
 But alas, such is the plight of the Islamic Republic; her coffers doomed to lay
-barren till the day the Pakistani man may acquiesce to a negotation reckoning
+barren till the day the Pakistani man may acquiesce to a negotiation reckoning
 not the boon of another, but his own.
